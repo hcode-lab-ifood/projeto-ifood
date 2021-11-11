@@ -208,16 +208,28 @@
             border: 2px solid #ccc;
             margin: 0 10px;
             border-radius: 5px;
+            box-shadow: 1px 1px 10px #ccc;
 
             .offer-description {
                 width: 80%;
                 padding: 20px;
                 position: relative;
 
+                h3 {
+                    color: #585858;
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    font-size: 13px;
+                    color: #c4c4c4;
+                }
+
                 .offer-price {
                     position: absolute;
                     bottom: 0;
                     margin-bottom: 15px;
+                    color: #499869;
                 }
             }
 
