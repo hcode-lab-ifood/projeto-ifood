@@ -24,121 +24,113 @@
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="assets/css/main.css">
     <title>Ifood</title>
-    <style>
-        main {
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        #banner {
-            background-image: url('assets/images/store/banner-mcdonalds.webp');
-            background-size: cover;
-            height: 250px;
-            background-position: center;
-        }
-
-        #logo-store {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-        }
-
-        #header {
-            height: 150px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-        }
-
-        #red-star {
-            width: 20px;
-            height: 20px;
-            margin-left: 10px;
-        }
-
-        #gold-star {
-            width: 20px;
-            height: 20px;
-            color: #cf8c1d;
-        }
-
-        #store-title {
-            margin-left: 20px;
-            color: #3E3E3E;
-            font-size: 30px;
-            font-weight: lighter;
-        }
-
-        #star-number {
-            color: #cf8c1d;
-            margin-left: 20px;
-        }
-
-        #details-store {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        #details-order {
-            display: flex;
-            align-items: center;
-        }
-        #more-details {
-            text-decoration: none;
-            color: #ea1d2c;
-            font-size: 18px;
-            font-weight: bold;
-            margin-right: 20px;
-        }
-        #details-order p {
-            margin-left: 20px;
-            color: #848688;
-        }
-        #glass {
-            width: 30px;
-            height: 30px;
-            color: #ea1d2c;
-        }
-        #search {
-            padding: 20px;
-        }
-        #menu {
-            display: flex;
-            justify-content: space-between;
-        }
-        #glass-area {
-            padding: 20px;
-        }
-    </style>
 </head>
 
 <body>
 
-    <main>
+    <main id="container">
         <section id="banner"></section>
+
         <header id="header">
-            <section id="details-store">
-                <img src="assets/images/store/mcdonalds.jpg" alt="Logo McDonalds" id="logo-store">
+
+            <section id="header-store">
+                <img src="assets/images/store/logo-loja.webp" alt="Logo McDonalds" id="logo-store" />
                 <h1 id="store-title">Mcdonald's Carrefour Anchieta (eta)</h1>
-                <img src="assets/images/red-star.png" alt="" id="red-star"><span id="star-number"><img
-                        src="assets/images/gold-star.png" id="gold-star" alt="" srcset="">4.6</span>
+                <img src="assets/images/red-star.png" alt="estrela vermelha" id="red-star" />
+                <span id="star-number"><img src="assets/images/gold-star.png" id="gold-star" alt="estrela dourada" />
+                    4.6</span>
             </section>
-            <section id="details-order">
+
+            <section id="header-details-order">
                 <a href="#" id="more-details">Ver mais</a> |
-                <p>Pedido minimo R$ 15,00</p>
+                <p><img src="assets/images/store/money.png" id="icon-money" alt="icon-money" /> Pedido minimo R$ 15,00
+                </p>
             </section>
+
         </header>
+
         <section id="menu">
             <section id="input-search">
-                <span id="glass-area"><img src="assets/images/store/lupa-arredondada.png" id="glass" alt="" srcset=""></span><input type="search" id="search" placeholder="Buscar no cardapio">
+                <img src="assets/images/store/lupa-arredondada.png" id="icon-search" alt="" />
+                <input type="search" id="search" placeholder="Buscar no cardápio" />
             </section>
             <section id="btn-menu">
-                <button>Entrega</button>
-                <button>Hoje</button>
+                <button id="btn-deliver">
+                    <img src="assets/images/store/moto.png" id="icon-moto" alt="moto" />
+                    Entrega
+                    <img src="assets/images/arrow-down.png" id="arrow-down" alt="" />
+                </button>
+                <button id="today">
+                    <p>Hoje</p>
+                    <p id="hour">20 - 30 min . R$ 4,99</p>
+                </button>
             </section>
         </section>
+
+        <h2 class="subtitle">Destaques</h2>
+
+        <div id="carousel-container">
+            <a href="#">
+                <div class="card">
+                    <div class="card-image1"></div>
+                    <div class="card-description">
+                        <h3>3 Sanduiches + 3 McFritas Médias</h3>
+                        <p>São 3 sanduiches e McFritas para compartilhar com
+                            quem preferir #Méquinosofá. Escolha 3 (três) sanduích...</p>
+                    </div>
+                    <span class="card-price">A partir de R$ 64,50</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="card">
+                    <div class="card-image2"></div>
+                    <div class="card-description">
+                        <h3>2 McOfertas Médias Clássicas</h3>
+                        <p>São 2 Mcofertas Médias Clássicas para você compartilhar
+                            com quem preferir #Méquinosofá. Escolha 2 (dois)...</p>
+                    </div>
+                    <span class="card-price">A partir de R$ 51,90</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="card">
+                    <div class="card-image3"></div>
+                    <div class="card-description">
+                        <h3>Sanduiche Clássico + Bebida</h3>
+                        <p>Escolha 1 (um) sanduíche entre as opções: Big Mac,
+                            Cheddar McMelt, Quarteirão com queijo e McChiken e...</p>
+                    </div>
+                    <span class="card-price">A partir de R$ 19,90</span>
+                </div>
+            </a>
+        </div>
+
+        <h2 class="subtitle">Ofertas para você</h2>
+
+        <div class="container-offers">
+            <div class="offer">
+                <div class="offer-description">
+                    <h3>Torta de Maça - promo</h3>
+                    <p>Deliciosa torta de massa quentinha e crocante com recheio de
+                        maçã. Promoção Não Cumulativa. Promoção válida em dias e...</p>
+                    <span class="offer-price">R$ 5,99</span>
+                </div>
+                <div class="offer-image">
+                    <img src="assets/images/store/torta-maca.png" id="offer-image" alt="" srcset="">
+                </div>
+            </div>
+            <div class="offer">
+                <div class="offer-description">
+                    <h3>Torta de Maça - promo</h3>
+                    <p>Deliciosa torta de massa quentinha e crocante com recheio de
+                        maçã. Promoção Não Cumulativa. Promoção válida em dias e...</p>
+                    <span class="offer-price">R$ 5,99</span>
+                </div>
+                <div class="offer-image">
+                    <img src="assets/images/store/torta-maca.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
     </main>
 
 </body>

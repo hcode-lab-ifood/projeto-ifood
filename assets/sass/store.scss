@@ -1,0 +1,237 @@
+#container {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding-bottom: 300px;
+
+    #banner {
+        background-image: url('../images/store/banner-mcdonalds.webp');
+        background-size: cover;
+        height: 250px;
+        background-position: center;
+    }
+
+    #header {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        #header-store {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+            color: #3E3E3E;
+            font-weight: lighter;
+
+                #logo-store {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                }
+
+                #store-title {
+                    margin-left: 20px;
+                }
+
+                #red-star {
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 10px;
+                }
+
+                #gold-star {
+                    width: 20px;
+                    height: 20px;
+                    color: #cf8c1d;
+                }
+
+                #star-number {
+                    color: #cf8c1d;
+                    margin-left: 20px;
+                }
+         }
+
+         
+        #header-details-order {
+            display: flex;
+            align-items: center;
+
+            #more-details {
+                text-decoration: none;
+                color: var(--red);
+                font-size: 18px;
+                font-weight: bold;
+                margin-right: 20px;
+            }
+
+            p {
+            margin-left: 20px;
+            color: #848688;
+                
+                #icon-money {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+
+        }
+    }
+
+    #menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        #input-search {
+            display: flex;
+            width: 70%;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+
+            #icon-search {
+                width: 25px;
+                height: 25px;
+                margin: 20px;
+            }
+
+            #search {
+                outline: none;
+                border: none;
+                font-size: 18px;
+                width: 100%
+            }
+        }
+
+        #btn-menu {
+            width: 30%;
+            display: flex;
+
+            #btn-deliver {
+                @include button;
+
+                #icon-moto {
+                    width: 20px;
+                    height: 20px;
+                    margin: 10px;
+                }
+
+                #arrow-down {
+                    width: 15px;
+                    height: 10px;
+                    margin: 10px;
+                }
+            }
+
+            #today {
+                @include button;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px;
+
+                #hour {
+                    color: #848688;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+
+    .subtitle {
+        margin: 30px 0;
+    }
+
+    #carousel-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+        }
+
+        .card {
+            width: 415px;
+            height: 385px;
+            margin: 0 10px;
+            border: 2px solid #ccc;
+            padding: 0 20px;
+            border-radius: 5px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+
+            .card-image1 {
+                @include card-image;
+                background-image: url('../images/store/mc3sanduiches.png');
+            }
+
+            .card-image2 {
+                @include card-image;
+                background-image: url('../images/store/mcofertas-media.png');
+            }
+
+            .card-image3 {
+                @include card-image;
+                background-image: url('../images/store/classico-bebida.png');
+            }
+
+            .card-description h3 {
+                color: #585858;
+                margin-bottom: 15px;
+            }
+
+            .card-description p {
+                font-size: 13px;
+                color: #c4c4c4;
+            }
+
+            .card-price {
+                font-size: 16px;
+                color: #499869;
+                position: absolute;
+                bottom: 0;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .container-offers {
+        width: 100%;
+        display: flex;
+
+        .offer {
+            width: 640px;
+            height: 225px;
+            display: flex;
+            justify-content: space-between;
+            flex: 2;
+            border: 2px solid #ccc;
+            margin: 0 10px;
+            border-radius: 5px;
+
+            .offer-description {
+                width: 80%;
+                padding: 20px;
+                position: relative;
+
+                .offer-price {
+                    position: absolute;
+                    bottom: 0;
+                    margin-bottom: 15px;
+                }
+            }
+
+            .offer-image {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 140px;
+                    height: 140px;
+                }
+            }
+        }
+    }
+    
+}
