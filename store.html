@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="assets/images/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Ifood</title>
+    <style>
+        main {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        #banner {
+            background-image: url('assets/images/store/banner-mcdonalds.webp');
+            background-size: cover;
+            height: 250px;
+            background-position: center;
+        }
+
+        #logo-store {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        #header {
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        #red-star {
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+        }
+
+        #gold-star {
+            width: 20px;
+            height: 20px;
+            color: #cf8c1d;
+        }
+
+        #store-title {
+            margin-left: 20px;
+            color: #3E3E3E;
+            font-size: 30px;
+            font-weight: lighter;
+        }
+
+        #star-number {
+            color: #cf8c1d;
+            margin-left: 20px;
+        }
+
+        #details-store {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #details-order {
+            display: flex;
+            align-items: center;
+        }
+        #more-details {
+            text-decoration: none;
+            color: #ea1d2c;
+            font-size: 18px;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        #details-order p {
+            margin-left: 20px;
+            color: #848688;
+        }
+        #glass {
+            width: 30px;
+            height: 30px;
+            color: #ea1d2c;
+        }
+        #search {
+            padding: 20px;
+        }
+        #menu {
+            display: flex;
+            justify-content: space-between;
+        }
+        #glass-area {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <section id="banner"></section>
+        <header id="header">
+            <section id="details-store">
+                <img src="assets/images/store/mcdonalds.jpg" alt="Logo McDonalds" id="logo-store">
+                <h1 id="store-title">Mcdonald's Carrefour Anchieta (eta)</h1>
+                <img src="assets/images/red-star.png" alt="" id="red-star"><span id="star-number"><img
+                        src="assets/images/gold-star.png" id="gold-star" alt="" srcset="">4.6</span>
+            </section>
+            <section id="details-order">
+                <a href="#" id="more-details">Ver mais</a> |
+                <p>Pedido minimo R$ 15,00</p>
+            </section>
+        </header>
+        <section id="menu">
+            <section id="input-search">
+                <span id="glass-area"><img src="assets/images/store/lupa-arredondada.png" id="glass" alt="" srcset=""></span><input type="search" id="search" placeholder="Buscar no cardapio">
+            </section>
+            <section id="btn-menu">
+                <button>Entrega</button>
+                <button>Hoje</button>
+            </section>
+        </section>
+    </main>
+
+</body>
+
+</html>
