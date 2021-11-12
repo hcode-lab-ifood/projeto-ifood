@@ -87,7 +87,7 @@
         #input-search {
             display: flex;
             width: 70%;
-            border: 2px solid #ccc;
+            border: 1px solid #ccc;
             border-radius: 5px;
 
             #icon-search {
@@ -141,6 +141,7 @@
 
     .subtitle {
         margin: 30px 0;
+        padding-left: 20px;
     }
 
     #carousel-container {
@@ -313,6 +314,10 @@
                     width: 60%;
                 }
             }
+        }
+
+        .subtitle {
+            font-size: 16px;
         }
 
         #carousel-container {
