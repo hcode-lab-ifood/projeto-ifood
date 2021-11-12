@@ -33,6 +33,7 @@
 
                 #store-title {
                     margin-left: 20px;
+                    font-size: 32px;
                 }
 
                 #red-star {
@@ -111,6 +112,11 @@
 
             #btn-deliver {
                 @include button;
+                transition: all .3s;
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 0 0 1px 1px #ccc;
+                }
 
                 #icon-moto {
                     width: 20px;
@@ -163,9 +169,10 @@
             position: relative;
             display: flex;
             flex-direction: column;
-            box-shadow: 1px 1px 15px #ccc;
-            :hover {
+            transition: all .3s;
+            &:hover {
                 cursor: pointer;
+                box-shadow: 0 0 1px 1px #ccc;
             }
 
             .card-image1 {
@@ -226,10 +233,11 @@
             border: 1px solid #ccc;
             margin: 0 10px;
             border-radius: 5px;
-            box-shadow: 1px 1px 15px #ccc;
-            :hover {
-                cursor: pointer;
-            }
+            transition: all .3s;
+            &:hover {
+                    cursor: pointer;
+                    box-shadow: 0 0 1px 1px #ccc;
+                }
 
             .offer-description {
                 width: 80%;
@@ -285,8 +293,8 @@
                 margin-top: 10px;
                 margin-left: 0;
 
-                h1 {
-                    font-size: 16px;
+                #store-title {
+                    font-size: 18px;
                 }
             }
         }
