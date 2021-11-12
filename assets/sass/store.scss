@@ -160,6 +160,9 @@
             display: flex;
             flex-direction: column;
             box-shadow: 1px 1px 10px #ccc;
+            :hover {
+                cursor: pointer;
+            }
 
             .card-image1 {
                 @include card-image;
@@ -211,6 +214,9 @@
             margin: 0 10px;
             border-radius: 5px;
             box-shadow: 1px 1px 10px #ccc;
+            :hover {
+                cursor: pointer;
+            }
 
             .offer-description {
                 width: 80%;
