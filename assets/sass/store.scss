@@ -3,6 +3,8 @@
     background-size: cover;
     height: 250px;
     background-position: center;
+    max-width: 1260px;
+    margin: 0 auto;
 }
 
 #container {
@@ -302,6 +304,11 @@
 
                 #btn-deliver {
                     margin-left: 0;
+                    margin-right:0;
+                }
+
+                #today {
+                    margin-left: 5px;
                 }
             }
         }
@@ -315,9 +322,21 @@
                 margin: 0;
                 margin-bottom: 20px;
             }
-
         }
-    }
+        .container-offers {
+            width: 100%;
 
+            .offer {
+                margin: 0;
+                margin-bottom: 20px;
+                width: 100%;
 
-}
+                .offer-description {
+                    font-size: 12px;
+                    padding-right: 0;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    } 
+} 
