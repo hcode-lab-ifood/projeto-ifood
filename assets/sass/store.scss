@@ -265,7 +265,7 @@
     
 }
 
-@media(min-width:375px) {
+@media(max-width:375px) {
     #banner {
         max-height: 120px;
         background-position: center;
