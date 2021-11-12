@@ -159,6 +159,7 @@
             position: relative;
             display: flex;
             flex-direction: column;
+            box-shadow: 1px 1px 10px #ccc;
 
             .card-image1 {
                 @include card-image;
@@ -182,7 +183,7 @@
 
             .card-description p {
                 font-size: 13px;
-                color: #c4c4c4;
+                color: #717171;
             }
 
             .card-price {
@@ -198,13 +199,14 @@
     .container-offers {
         max-width: 100%;
         display: flex;
+        flex-wrap: wrap;
 
         .offer {
-            width: 640px;
+            width: 50%;
             height: 225px;
             display: flex;
             justify-content: space-between;
-            flex: 1;
+            flex: 3;
             border: 2px solid #ccc;
             margin: 0 10px;
             border-radius: 5px;
@@ -222,7 +224,7 @@
 
                 p {
                     font-size: 13px;
-                    color: #c4c4c4;
+                    color: #717171;
                 }
 
                 .offer-price {
