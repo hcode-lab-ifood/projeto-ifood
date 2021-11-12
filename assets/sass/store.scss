@@ -1,13 +1,13 @@
+#banner {
+    background-image: url('../images/store/banner-mcdonalds.webp');
+    background-size: cover;
+    height: 250px;
+    background-position: center;
+}
+
 #container {
     max-width: 1260px;
     margin: 0 auto;
-
-    #banner {
-        background-image: url('../images/store/banner-mcdonalds.webp');
-        background-size: cover;
-        height: 250px;
-        background-position: center;
-    }
 
     #header {
         width: 100%;
@@ -168,16 +168,25 @@
             .card-image1 {
                 @include card-image;
                 background-image: url('../images/store/mc3sanduiches.png');
+                @media(min-width: 375px) {
+                    width: 100%;
+                }
             }
 
             .card-image2 {
                 @include card-image;
                 background-image: url('../images/store/mcofertas-media.png');
+                @media(min-width: 375px) {
+                    width: 100%;
+                }
             }
 
             .card-image3 {
                 @include card-image;
                 background-image: url('../images/store/classico-bebida.png');
+                @media(min-width: 375px) {
+                    width: 100%;
+                }
             }
 
             .card-description h3 {
@@ -254,4 +263,61 @@
         }
     }
     
+}
+
+@media(min-width:375px) {
+    #banner {
+        max-height: 120px;
+        background-position: center;
+    }
+    #container {
+        max-width: 375px;
+        margin: 0 15px;
+
+        #header {
+            flex-direction: column;
+
+            #header-store {
+                width: 100%;
+                margin-top: 10px;
+                margin-left: 0;
+
+                h1 {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        #menu {
+            flex-direction: column;
+            margin-top: 20px;
+
+            #input-search {
+                width: 100%;
+            }
+
+            #btn-menu {
+                width: 100%;
+                margin-top: 10px;
+
+                #btn-deliver {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        #carousel-container {
+            flex-direction: column;
+
+            .card {
+                width: 100%;
+                padding: 0 15px;
+                margin: 0;
+                margin-bottom: 20px;
+            }
+
+        }
+    }
+
+
 }
