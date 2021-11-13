@@ -1,0 +1,74 @@
+#header{
+    flex-direction: row;
+    display: flex;
+    background-color: #F7F7F7;
+
+    .overlay{
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    .logo-ifood{
+        width: 89px;
+        height: 52px;
+        display: none;
+
+    }.btn-burger{
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background-color: red;
+        border: 0;
+        .burger{
+            width: 30px;
+            height: 30px;
+        
+        }#span1{
+            display: none;
+        }
+        
+
+        .btn-arrow-down{
+            width: 11px;
+            height: 7px;
+            .arrow-down{
+                width: 11px;
+                height: 7px;
+
+            }
+
+        }
+    }
+    ul{
+        margin-left: 23px;
+        list-style: none;
+        #l1 {
+            font-size: 13px;
+            color: #cccccc;
+            text-transform: uppercase;
+        }
+        #l2{
+            span {
+                color: #585858;
+                font-size: 14px;
+                font-weight: 600;
+            }
+            display: flex;
+            .house{
+                width: 19px;
+                height: 18px;
+            }
+            button {
+                img {
+                    width: 11px;
+                }
+            }
+        }
+    }
+
+    }
+    .hidden-mobile {
+        display: none;
+    }
+
+}
+
