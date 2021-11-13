@@ -3,12 +3,12 @@
     background-size: cover;
     height: 250px;
     background-position: center;
-    max-width: 1260px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 #container {
-    max-width: 1260px;
+    max-width: 1220px;
     margin: 0 auto;
 
     #header {
@@ -33,6 +33,7 @@
 
                 #store-title {
                     margin-left: 20px;
+                    font-size: 32px;
                 }
 
                 #red-star {
@@ -69,13 +70,13 @@
             p {
             margin-left: 20px;
             color: #848688;
+            margin-bottom: 20px;
                 
                 #icon-money {
                     width: 15px;
                     height: 15px;
                 }
             }
-
         }
     }
 
@@ -87,7 +88,7 @@
         #input-search {
             display: flex;
             width: 70%;
-            border: 2px solid #ccc;
+            border: 1px solid #ccc;
             border-radius: 5px;
 
             #icon-search {
@@ -111,6 +112,11 @@
 
             #btn-deliver {
                 @include button;
+                transition: all .3s;
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 0 0 1px 1px #ccc;
+                }
 
                 #icon-moto {
                     width: 20px;
@@ -130,10 +136,12 @@
                 flex-direction: column;
                 align-items: flex-start;
                 padding: 10px;
+                width: 100%;
 
                 #hour {
                     color: #848688;
                     margin-top: 5px;
+                    text-align: left;
                 }
             }
         }
@@ -141,6 +149,7 @@
 
     .subtitle {
         margin: 30px 0;
+        padding-left: 20px;
     }
 
     #carousel-container {
@@ -156,15 +165,16 @@
             width: 410px;
             height: 385px;
             margin: 0 10px;
-            border: 2px solid #ccc;
+            border: 1px solid #ccc;
             padding: 0 20px;
             border-radius: 5px;
             position: relative;
             display: flex;
             flex-direction: column;
-            box-shadow: 1px 1px 10px #ccc;
-            :hover {
+            transition: all .3s;
+            &:hover {
                 cursor: pointer;
+                box-shadow: 0 0 1px 1px #ccc;
             }
 
             .card-image1 {
@@ -212,23 +222,25 @@
     }
 
     .container-offers {
-        max-width: 100%;
+        width: 100%;
         display: flex;
+        justify-content: space-between;
         flex-wrap: wrap;
 
         .offer {
             width: 50%;
             height: 225px;
             display: flex;
+            flex: 1;
             justify-content: space-between;
-            flex: 3;
-            border: 2px solid #ccc;
-            margin: 0 10px;
+            border: 1px solid #ccc;
+            margin: 0 15px;
             border-radius: 5px;
-            box-shadow: 1px 1px 10px #ccc;
-            :hover {
-                cursor: pointer;
-            }
+            transition: all .3s;
+            &:hover {
+                    cursor: pointer;
+                    box-shadow: 0 0 1px 1px #ccc;
+                }
 
             .offer-description {
                 width: 80%;
@@ -269,7 +281,7 @@
 
 @media(max-width:375px) {
     #banner {
-        max-height: 120px;
+        max-height: 100px;
         background-position: center;
     }
     #container {
@@ -284,8 +296,8 @@
                 margin-top: 10px;
                 margin-left: 0;
 
-                h1 {
-                    font-size: 16px;
+                #store-title {
+                    font-size: 18px;
                 }
             }
         }
@@ -305,12 +317,18 @@
                 #btn-deliver {
                     margin-left: 0;
                     margin-right:0;
+                    width: 40%;
                 }
 
                 #today {
-                    margin-left: 5px;
+                    margin-left: 10px;
+                    width: 60%;
                 }
             }
+        }
+
+        .subtitle {
+            font-size: 16px;
         }
 
         #carousel-container {
@@ -340,3 +358,4 @@
         }
     } 
 } 
+
