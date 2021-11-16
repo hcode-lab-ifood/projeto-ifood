@@ -15,7 +15,8 @@
 @mixin card-image {
      width: 415px;
      height: 180px;
-     background-size: cover;
+     background-size: 100%;
      background-position: center;
+     background-repeat: no-repeat;
      margin-bottom: 15px;
 }
