@@ -32,6 +32,8 @@ footer {
 
 @media(min-width: 960px) {
     footer {
+        width: 100vw;
+
         .footer-mobile {
             display: none;
         }
@@ -46,24 +48,27 @@ footer {
                 margin: 20px 0;
             }
 
-            .title {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                padding: 0 30px;
-                height: 40px;
-                margin-bottom: 20px;
+            .cities {
+                .title {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 30px;
+                    height: 40px;
+                    margin-bottom: 20px;
 
-                >h2 {
-                    font-size: 17px;
-                    color: #3F3E3E;
-                    font-weight: 600;
-                }
+                    >h2 {
+                        font-size: 17px;
+                        color: #3F3E3E;
+                        font-weight: 600;
+                    }
 
-                >a {
-                    text-decoration: none;
-                    font-size: 14px;
-                    color: #EA1D2C;
+                    >a {
+                        text-decoration: none;
+                        font-size: 14px;
+                        color: #EA1D2C;
+                        margin-right: 0px;
+                    }
                 }
             }
 
@@ -139,33 +144,40 @@ footer {
                 }
 
                 .column-social {
+                    width: 110px;
+
                     h2 {
                         font-size: 17px;
                         color: #3F3E3E;
                         font-weight: 600;
-                        margin: 20px 0;
+                        margin: 20px 0 50px 0;
                     }
 
                     min-width: 180px;
                     display: flex;
                     flex-direction: column;
+                    justify-content: flex-start;
+
 
                     >ul {
                         display: flex;
                         align-items: center;
                         margin: -20px;
-
+                        justify-content: flex-start;
+                        padding: 0 24px;
 
                         li {
                             list-style: none;
+                            margin-right: 15px;
+
                             a {
-                                svg {
-                                    height: 25px;
+                                img {
+                                    height: 29px;
                                 }
                             }
                         }
-
                     }
+
 
                 }
             }
@@ -173,23 +185,24 @@ footer {
             .copyright-terms {
                 padding: 20px 30px;
                 display: grid;
-                grid-template-columns: 1fr 2fr 7fr;
+                grid-template-columns: 0.5fr 2.5fr 7fr;
                 height: 150px;
 
                 >a {
                     height: 100px;
+                    width: 50px;
                     display: flex;
                     align-items: center;
-                    margin-right: 10px;
+                    justify-content: flex-start;
+                    margin-right: 15px;
 
                     img {
-                        height: 38px;
+                        height: 40px;
                     }
                 }
 
                 .informations {
-                    width: 150px;
-                    font-size: 12px;
+                    font-size: 11px;
                     color: #71757A;
                 }
 
@@ -213,6 +226,22 @@ footer {
         }
     }
 }
+
+@media(min-width: 1200px) {
+    fotter {
+        .footer-desktop {
+            .cities {
+                .title {
+                    >a {
+                        margin-right: 0px;
+                        color: blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 @media(min-width: 1600px) {
     footer {
