@@ -5,7 +5,14 @@
 	justify-content: center;
 	
 }
+
+section{
+	padding: 20px;
+}
+
 main{
+	display: flex;
+	flex-direction: column;
 	background-image: url(../images/login/bg-login.svg);
 	background-repeat: no-repeat;
 	background-position:  center;
@@ -13,6 +20,7 @@ main{
 
 .logo {
 	display: flex;
+	margin: 0;
 	img {
 		width: 85px;
 		height: 50px;
@@ -22,7 +30,6 @@ main{
 }
 
 svg{
-	
 	width: 257px;
 	height: 239px;
 }
@@ -35,16 +42,21 @@ header {
 }
 
 .btn-login{
+	display: flex;
+	flex-direction: column;
+	padding: 18px;
 	a{
+		width: 100%;
 		display: flex;
 		text-align: center;
 		text-decoration: none;
 		&.btn-facebook{
 			background-color: #4065B4;
-			max-width: 355px;
+			border-radius: 4px;
 		}
 		&.btn-google{
 			background-color: #FFFFFF;
+			border-radius: 4px;
 		}
 	}
 	
@@ -56,13 +68,19 @@ header {
 }
 
 .access{
+	max-width: 100%;
 	align-items: center;
 	display: flex;
+	justify-content: center;
+	padding-left: 18px;
+	padding-right: 18px;
 	a{
 		text-decoration: none;
 		padding:18px;
 		margin: 23px;
 		border: #C4C4C4 1px solid;
 		border-radius: 4px;
+		min-width: 156px;
+		text-align: center;
 	}
 }
