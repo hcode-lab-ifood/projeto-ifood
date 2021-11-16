@@ -8,6 +8,7 @@
 
 section{
 	padding: 20px;
+	max-width: 100%;
 }
 
 main{
@@ -15,12 +16,15 @@ main{
 	flex-direction: column;
 	background-image: url(../images/login/bg-login.svg);
 	background-repeat: no-repeat;
-	background-position:  center;
+	background-position:  center 150%;
 }
 
 .logo {
 	display: flex;
 	margin: 0;
+	margin-bottom: -150px;
+	position: relative;
+	z-index: 2;
 	img {
 		width: 85px;
 		height: 50px;
@@ -32,9 +36,11 @@ main{
 svg{
 	width: 257px;
 	height: 239px;
+	margin-top: 150px;
 }
 
 header {
+	padding-top: 30px;
 	text-align: center;
 	p {
 		margin-top: 25px;
@@ -44,8 +50,11 @@ header {
 .btn-login{
 	display: flex;
 	flex-direction: column;
-	padding: 18px;
 	a{
+		img{
+			margin-right: 18px;
+		}
+		height: 50px;
 		width: 100%;
 		display: flex;
 		text-align: center;
@@ -68,16 +77,12 @@ header {
 }
 
 .access{
-	max-width: 100%;
 	align-items: center;
 	display: flex;
-	justify-content: center;
-	padding-left: 18px;
-	padding-right: 18px;
+	justify-content: space-between;
 	a{
 		text-decoration: none;
 		padding:18px;
-		margin: 23px;
 		border: #C4C4C4 1px solid;
 		border-radius: 4px;
 		min-width: 156px;
