@@ -3,7 +3,7 @@
     background-size: cover;
     height: 250px;
     background-position: center;
-    max-width: 1200px;
+    max-width: 1220px;
     margin: 0 auto;
 }
 
@@ -90,6 +90,7 @@
             width: 70%;
             border: 1px solid #ccc;
             border-radius: 5px;
+            height: 70px;
 
             #icon-search {
                 width: 25px;
@@ -107,7 +108,7 @@
         }
 
         #btn-menu {
-            width: 30%;
+            width: 40%;
             display: flex;
 
             #btn-deliver {
@@ -136,7 +137,7 @@
                 flex-direction: column;
                 align-items: flex-start;
                 padding: 10px;
-                width: 100%;
+                width: 70%;
 
                 #hour {
                     color: #848688;
@@ -163,7 +164,7 @@
 
         .card {
             width: 410px;
-            height: 385px;
+            height: 400px;
             margin: 0 10px;
             border: 1px solid #ccc;
             padding: 0 20px;
@@ -216,7 +217,7 @@
                 color: #499869;
                 position: absolute;
                 bottom: 0;
-                margin-bottom: 15px;
+                margin-bottom: 10px;
             }
         }
     }
@@ -231,7 +232,7 @@
             width: 50%;
             height: 225px;
             display: flex;
-            flex: 1;
+            flex:1;
             justify-content: space-between;
             border: 1px solid #ccc;
             margin: 0 15px;
@@ -272,6 +273,7 @@
                 img {
                     width: 140px;
                     height: 140px;
+                    background-color: transparent;
                 }
             }
         }
