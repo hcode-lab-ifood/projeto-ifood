@@ -18,6 +18,7 @@
 		background-image: url(../images/login/bg-login.svg);
 		background-repeat: no-repeat;
 		background-position:  center 150%;
+		background-color: #FFF;
 	}
 	
 	.logo {
@@ -63,6 +64,7 @@
 			&.btn-facebook{
 				background-color: #4065B4;
 				border-radius: 4px;
+				color: #FFF;
 			}
 			&.btn-google{
 				background-color: #FFFFFF;
@@ -134,28 +136,24 @@
 		}
 		.btn-login{
 			min-width: 100%;
-			&.btn-google{
-				border-radius: 4px;
+			.btn-google{
 				box-shadow: 0 4px 4px rgba(0,0,0,.1);
+				border-radius: 4px;
 			}
 		}
 		.access{
 			min-width: 100%;
-			
+			a{
+				min-width: 46%;
+			}
 		}
 	}
 	
 	
 	@media (min-width: 1920px){
-		.logo{
-			display: block;
-			img{
-				justify-content: flex-start;
-				padding-left: 37px;
-				margin-top: 55px;
-				width: 85px;
-				height: 50px;
-			}
+		main{
+			background-position: -63% 104%;
+			background-size: 80%;
 		}
 	}
 	
