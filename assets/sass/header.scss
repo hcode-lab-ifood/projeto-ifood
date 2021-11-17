@@ -36,6 +36,7 @@
           margin-left: 19px;
           margin-bottom: 19px;
           margin-top: 17px;
+          
             .burger{
               width: 30px;
               height: 30px;
@@ -60,7 +61,7 @@
         }
         ul{
            margin-left: 0;
-           margin-top: 17px;
+           margin-top: 0;
            margin-bottom: 23px;
            padding-right: 60px;
            padding: 0;
@@ -82,22 +83,22 @@
                   font-size: 14px;
                    font-weight: 600;
                    margin-right: 6px;
-                   margin-top: 7px;
-                   margin-bottom: 0;
-                   padding-bottom: 22px;
+                   margin-top: 8px;
+                   margin-bottom: 15px;
+                   padding-bottom: 0;
                 }
              
                 .house{
                  width: 19px;
                  height: 18px;
-                 margin-top: 6px;
+                 margin-top: 4px;
                  margin-right: 5px;
                  margin-bottom: 25px;
                 }
                 button {
                   border: 0;
                   background-color: transparent;
-                  padding-bottom: 22px;
+                  padding-bottom: 18px;
                     img {
                        width: 11px;
                     }
@@ -124,7 +125,8 @@
     #header{
         justify-content: left;
         height: 81px;
-        width: 1370px;
+        width: 1368px;
+        margin-right: 0;
         .home-logo-ifood{
           display: flex;
           margin-top: 16px;
@@ -143,11 +145,13 @@
           .btn-burger{
             margin-right: 13px;
             margin-left: 0;
+            
           }
           ul{
             padding-right: 20px;
             padding-left: 20px;
             margin-right: 10px;
+            margin: 0;
           }
             
 
@@ -156,7 +160,7 @@
 
             #h1 {
               font-size: 16.67px;
-              margin: 0; 
+              margin-top: 30px; 
               font-weight: normal; 
             
             } 
@@ -164,6 +168,7 @@
                 width: 15px;
                 height: 18px;
                 margin-left: 3px;
+                margin-top: 30px;
                 border: 0;
                 background-color: transparent;
                 
@@ -184,6 +189,7 @@
               .lista-icones{
                 display: flex;
                 padding: 0;
+                padding-top: 29px;
 
                 #icone1{
                   img{
@@ -216,7 +222,7 @@
             
             .campo-pesquisa{
               display: flex;  
-              padding: 50px 10px 50px 0;
+              padding: 18px 0 15px 0;
               margin-left: 70px;
               margin-right: 53px;
               position: relative;
@@ -230,7 +236,7 @@
                 }
                 label{
                   position: absolute;
-                  top: 65px;
+                  top: 32px;
                   left: 15px;
                   img{
                     width: 18px;
