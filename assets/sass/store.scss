@@ -243,8 +243,9 @@
         .offer {
             width: 49%;
             height: 250px;
-            position: relative;
             border: 1px solid #ccc;
+            display: flex;
+            justify-content: space-between;
             margin-bottom: 30px;
             border-radius: 5px;
             transition: all .3s;
@@ -279,10 +280,6 @@
             .offer-image {
                 display: flex;
                 align-items: center;
-                position: absolute;
-                right: 0;
-                margin: 0 15px;
-                top: 30px;
                 margin: 0 5px;
 
                 img {
@@ -304,10 +301,10 @@
         max-width: 375px;
         margin: 0 15px;
 
-        #header {
+        #header-store {
             flex-direction: column;
 
-            #header-store {
+            #header-content-store {
                 width: 100%;
                 margin-top: 10px;
                 margin-left: 0;
@@ -315,6 +312,10 @@
                 #store-title {
                     font-size: 18px;
                 }
+            }
+
+            #header-details-order p {
+                margin-bottom: 0;
             }
         }
 
