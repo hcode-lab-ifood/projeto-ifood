@@ -1,9 +1,5 @@
 
 
-#home {
-    
-}
-
 .cuppons {
     display: flex;
     justify-content: center;
@@ -25,7 +21,6 @@
 
 
 main#home {
-    background-color: var(--gray-f7);
     .btn-group {
         margin: 0 24px;
         margin-bottom: 42px;
@@ -134,6 +129,7 @@ main#home {
                 justify-content: center;
                 text-align: center;
                 color: #878787;
+                min-width: 114px;
 
                 img {
                     // margin: 0;
@@ -197,6 +193,7 @@ main#home {
                 justify-content: center;
                 text-align: center;
                 color: #878787;
+                min-width: 114px;
 
                 img {
                     // margin: 0;
@@ -261,7 +258,6 @@ main#home {
     #store {
         header {
             display: flex;
-            justify-content: space-between;
             padding: 0 20px;
 
             span {
@@ -271,6 +267,49 @@ main#home {
             }
         }
 
-        .stores {}
+        .stores {
+            display: flex;
+            width: calc(100% - 30px);
+            margin: 30px 15px;
+            position: relative;
+            .img {
+                width: 55px;
+                img {
+                    border-radius: 55px;
+                }
+            }
+            .txt {
+                padding-left: 15px;
+                padding-right: 15px;
+                p {
+                    font-weight: 600;
+                    font-size: 13px;
+                }
+                small {
+                    color: var(--gray-71);
+                }
+            }
+            .red-star {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+    }
+    @media (min-width: 960px) {
+    
+        #store {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            header {
+                min-width: 100%;
+                flex: 1;
+            }
+            .stores {
+                max-width: 30%;
+            }
+        }
     }
 }

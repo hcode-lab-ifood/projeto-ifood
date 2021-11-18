@@ -9,6 +9,7 @@ html, body {
     font-weight: 400;
     color: var(--dark);
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 img {
@@ -17,4 +18,9 @@ img {
 
 ul {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
