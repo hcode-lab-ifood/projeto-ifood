@@ -7,4 +7,9 @@
 html, body {
     font-family: "Poppins";
     font-weight: 400;
+    color: var(--dark);
+}
+
+img {
+    max-width: 100%;
 }
