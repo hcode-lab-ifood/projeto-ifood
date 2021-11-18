@@ -8,8 +8,13 @@ html, body {
     font-family: "Poppins";
     font-weight: 400;
     color: var(--dark);
+    scroll-behavior: smooth;
 }
 
 img {
     max-width: 100%;
+}
+
+ul {
+    list-style: none;
 }

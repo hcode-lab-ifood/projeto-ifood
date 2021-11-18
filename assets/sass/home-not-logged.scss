@@ -1,6 +1,7 @@
 
 .home-guest {
     background-color: var(--white);
+    overflow-x: hidden;
     #header-guest {
         background-color: var(--gray-f7);
         position: sticky;
@@ -264,6 +265,9 @@
             font-weight: normal;
             width: 120px;
         }
+    }
+    img {
+        max-width: 100%;
     }
     @media (min-width: 960px) {
         #header-guest {
