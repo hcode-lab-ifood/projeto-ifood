@@ -1,0 +1,67 @@
+@font-face {
+  font-family: Poppins;
+  src: local("Poppins Light"), url(../fonts/Poppins-Light.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: Poppins;
+  src: local("Poppins Regular"), url(../fonts/Poppins-Regular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: Poppins;
+  src: local("Poppins SemiBold"), url(../fonts/Poppins-SemiBold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: Poppins;
+  src: local("Poppins Bold"), url(../fonts/Poppins-Bold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+:root {
+  --bg-color: #FFF;
+  --white: #FFF;
+  --black: #000;
+  --red: #E32119;
+  --red-hover: #E4423B;
+  --red-active: #C91D16;
+  --green: #50A773;
+  --blue: #336B8B;
+  --gray: #A6A6B9;
+  --dark-grey: #919191;
+  --lead: #0F0F0F;
+  --yellow: #E7A74E;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Poppins-Regular;
+  font-style: normal;
+  font-weight: 400;
+}
+
+body, div, article, aside, footer, header, main, nav, section, ul, ol, li, button, figure, picture {
+  display: flex;
+}
+
+body {
+  margin: 0;
+  flex-direction: column;
+  background-color: var(--bg-color);
+}
+
+hr.divider {
+  background-color: var(#FFF);
+  height: 1px;
+  width: calc(100% - 2em);
+  margin: 3em 0;
+  border: none;
+  align-self: center;
+}
+
+/*# sourceMappingURL=main.css.map */
