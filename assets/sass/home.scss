@@ -1,0 +1,315 @@
+
+
+.cuppons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100vw;
+    background-color: #50A773;
+
+    img {
+        padding: auto;
+        margin: 0 20px;
+    }
+
+    span {
+        padding: 0 10px;
+        color: #fff;
+    }
+}
+
+
+main#home {
+    .btn-group {
+        margin: 0 24px;
+        margin-bottom: 42px;
+
+        button {
+            border: 1px solid #CCC;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            font-size: 13px;
+            font-weight: 400;
+            outline: none;
+            cursor: pointer;
+            border-radius: 20px;
+            background-color: transparent;
+            color: #CCC;
+            padding: 10px 15px;
+
+            span {
+                color: #878787;
+
+                img {
+                    color: #878787;
+                }
+            }
+        }
+    }
+
+    #products {
+        display: flex;
+        flex-direction: row;
+
+        .item {
+            display: flex;
+
+            li {
+                justify-content: center;
+                text-align: center;
+                padding: 0 12px;
+
+                img {
+                    width: 90px;
+                    height: 64px;
+                    margin: 0 auto;
+                }
+
+                p {
+                    font-weight: 300;
+                    margin: 0;
+                    font-size: 13px;
+                    color: #878787;
+                }
+            }
+        }
+    }
+
+    #promo {
+        display: flex;
+        flex-direction: row;
+
+        .sold {
+            display: flex;
+            margin: 40px 44px;
+            margin-left: 0;
+            margin-right: 0;
+            overflow-x: auto;
+
+            li {
+                justify-content: center;
+                text-align: center;
+
+                img {
+                    width: 392px;
+                    height: 182px;
+                    margin: 0;
+                    padding: 0 2px;
+                }
+            }
+        }
+    }
+
+    #last-stores {
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+
+            span:nth-child(1) {
+                color: #3f3e3e;
+                font-size: 17px;
+                font-weight: bold;
+            }
+
+            span:nth-child(2) {
+                color: #EA1D2C;
+                font-size: 14px;
+            }
+        }
+
+        .last {
+            display: flex;
+            margin-top: 14px;
+            margin-bottom: 44px;
+
+            li {
+                justify-content: center;
+                text-align: center;
+                color: #878787;
+                min-width: 114px;
+
+                img {
+                    // margin: 0;
+                    padding: 0 14px;
+                    width: 100%;
+                    height: 88px;
+                }
+
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    #ifood-club-market {
+        .club-market {
+            display: flex;
+            flex-direction: column;
+            // margin: 14px 44px 0 0;
+            // justify-content: center;
+            align-items: center;
+            line-height: 60px;
+
+            ul {
+                justify-content: center;
+                text-align: center;
+                border-radius: 12%;
+
+                img {
+                    padding: 0px;
+                }
+            }
+        }
+    }
+
+    #famous-stores {
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+
+            span:nth-child(1) {
+                color: #3f3e3e;
+                font-size: 17px;
+                font-weight: bold;
+            }
+
+            span:nth-child(2) {
+                color: #EA1D2C;
+                font-size: 14px;
+            }
+        }
+
+        .famous {
+            display: flex;
+            margin-top: 14px;
+            margin-bottom: 40px;
+
+            li {
+                justify-content: center;
+                text-align: center;
+                color: #878787;
+                min-width: 114px;
+
+                img {
+                    // margin: 0;
+                    padding: 0 14px;
+                    width: 100%;
+                    height: 88px;
+                }
+
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    #gourmet {
+        .select {
+            display: flex;
+            flex-direction: column;
+            margin: 14px 44px 0 0;
+            justify-content: center;
+            align-items: center;
+            line-height: 45px;
+
+            ul {
+                justify-content: center;
+                text-align: center;
+
+                img {
+                    padding: 0px;
+                }
+            }
+        }
+    }
+
+    #express-stores {
+        .takaway {
+            display: flex;
+            margin-top: 14px;
+            margin-bottom: 45px;
+
+            li {
+                justify-content: center;
+                text-align: center;
+                color: #878787;
+
+                img {
+                    // margin: 0;
+                    width: 100%;
+                    height: 70px;
+                    padding: 0 14px;
+                }
+
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+
+    }
+
+    #store {
+        header {
+            display: flex;
+            padding: 0 20px;
+
+            span {
+                color: #3f3e3e;
+                font-size: 17px;
+                font-weight: bold;
+            }
+        }
+
+        .stores {
+            display: flex;
+            width: calc(100% - 30px);
+            margin: 30px 15px;
+            position: relative;
+            .img {
+                width: 55px;
+                img {
+                    border-radius: 55px;
+                }
+            }
+            .txt {
+                padding-left: 15px;
+                padding-right: 15px;
+                p {
+                    font-weight: 600;
+                    font-size: 13px;
+                }
+                small {
+                    color: var(--gray-71);
+                }
+            }
+            .red-star {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+    }
+    @media (min-width: 960px) {
+    
+        #store {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            header {
+                min-width: 100%;
+                flex: 1;
+            }
+            .stores {
+                max-width: 30%;
+            }
+        }
+    }
+}

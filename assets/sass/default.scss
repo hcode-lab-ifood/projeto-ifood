@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -26,3 +27,31 @@ hr {
         align-self: center;    
     }
 }    
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Poppins";
+    font-weight: 400;
+    color: var(--dark);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+>>>>>>> 22c5cc308fd57810099c9f951999e1b9bf4b3dd7
