@@ -7,12 +7,12 @@
     background-size: cover;
     height: 250px;
     background-position: center;
-    max-width: 1220px;
+    max-width: 1278px;
     margin: 0 auto;
 }
 
 #container {
-    max-width: 1220px;
+    max-width: 1278px;
     margin: 0 auto;
 
     #header-store {
@@ -38,6 +38,7 @@
                 #store-title {
                     margin-left: 20px;
                     font-size: 32px;
+                    font-family: 'Poppins-Regular';
                 }
 
                 .rating {
@@ -65,22 +66,23 @@
          
         #header-details-order {
             display: flex;
-            align-items: center;
+            justify-content: flex-end;
+            width: 25%;
 
             #more-details {
                 text-decoration: none;
                 color: var(--red);
                 font-size: 14px;
                 font-weight: bold;
-                margin-right: 20px;
-                width: 30%;
+                margin-right: 10px;
+                margin-top: 5px;
+                font-family: 'Poppins-Regular';
             }
 
             p {
-            margin-left: 20px;
+            margin-left: 10px;
             color: #848688;
             margin-bottom: 20px;
-            width: 70%;
                 
                 #icon-money {
                     width: 15px;
@@ -161,6 +163,7 @@
     .subtitle {
         margin: 30px 0;
         padding-left: 20px;
+        color: #3F3E3E;
     }
 
     #carousel-container {
@@ -318,8 +321,13 @@
                 }
             }
 
-            #header-details-order p {
-                margin-bottom: 0;
+            #header-details-order {
+                width: 100%;
+                text-align: center;
+
+                #header-details-order p {
+                    margin-bottom: 0;
+                }
             }
         }
 
