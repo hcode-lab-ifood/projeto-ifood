@@ -125,7 +125,7 @@
     #header{
         justify-content: left;
         height: 81px;
-        width: 1368px;
+        width: 100%;
         margin-right: 0;
         .home-logo-ifood{
           display: flex;
@@ -142,6 +142,8 @@
         }
         .overlay{
           height: 80px;
+          margin-left: auto;
+          margin-right: auto;
           .btn-burger{
             margin-right: 13px;
             margin-left: 0;
