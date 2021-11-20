@@ -138,4 +138,133 @@ body.body-product {
             display: none;
         }
     }
+    @media (min-width: 960px) {
+        padding-top: var(--space);
+        #product {
+            @include limit-container;
+            width: 90%;
+            .bg-overlay {
+                flex-direction: row;
+                max-height: calc(100vh - calc(var(--space) * 2));
+                > div {
+                    width: 50%;
+                }
+                .product-photo {
+                    justify-content: center;
+                    background-color: var(--white);
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                    a {
+                        display: none;
+                    }
+                    picture {
+                        width: 100%;
+                        text-align: center;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+                .product-description {
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                    .hidden-mobile {
+                        display: none;
+                    }
+                }
+            }
+            .same-hall {
+                display: none;
+            }
+            .box-store, .ingredients {
+                display: flex;
+                flex-direction: column;
+            }
+            .box-store {
+                border: 1px solid var(--gray-ddd);
+                border-radius: 4px;
+                padding: 1em;
+                .store-name {
+                    display: flex;
+                    img:not(:first-child) {
+                        margin-left: 10px;
+                    }
+                    span {
+                        margin-left: auto;
+                    }
+                }
+                hr {
+                    border: 2px dashed var(--gray-ddd);
+                }
+                .store-time {
+                    color: var(--gray-87);
+                }
+            }
+            .ingredients {
+                header {
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: var(--gray-f2);
+                    margin-left: -20px;
+                    margin-right: -18px;
+                    padding: 10px var(--space);
+                }
+                ul {
+                    max-height: 210px;
+                    overflow-y: auto;
+                    margin-right: -18px;
+                    padding-right: 10px;
+                    .ingredient {
+                        display: flex;
+                        justify-content: space-between;
+                        color: var(--gray-71);
+                        border-bottom: 1px solid var(--gray-f2);
+                        margin-bottom: 10px;
+                        padding-bottom: 10px;
+                        .price {
+                            color: var(--red);
+                        }
+                    }
+                }
+                footer {
+                    width: auto;
+                    padding: 0;
+                    display: flex;
+                    justify-content: flex-end;
+                    .quantity {
+                        border: 1px solid var(--gray-ddd);
+                        border-radius: 4px;
+                        input {
+                            font-size: 1.25rem;
+                            font-weight: 600;
+                            text-align: center;
+                            width: 70px;
+                            height: 48px;
+                            border: 0;
+                        }
+                        button {
+                            font-size: 1.25rem;
+                            font-weight: 600;
+                            height: 48px;
+                            width: 48px;
+                            border: 0;
+                            background-color: transparent;
+                            color: var(--red);
+                            cursor: pointer;
+                        }
+                    }
+                    .btn-red {
+                        display: flex;
+                        justify-content: space-between;
+                        padding-left: var(--space);
+                        padding-right: var(--space);
+                        max-width: 240px;
+                        margin-left: var(--space);
+                        background-color: var(--red);
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
 }
