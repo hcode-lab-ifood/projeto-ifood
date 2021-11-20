@@ -8,7 +8,7 @@
     height: 250px;
     background-position: center;
     max-width: 1278px;
-    margin: 0 auto;
+    margin: var(--space) auto 0;
 }
 
 #container {
@@ -26,7 +26,7 @@
             display: flex;
             align-items: center;
             margin-left: 20px;
-            color:var(--gray3f);
+            color:var(--gray-3f);
             font-weight: lighter;
 
                 #logo-store {
@@ -162,7 +162,7 @@
     .subtitle {
         margin: 30px 0;
         padding-left: 20px;
-        color: var(--gray3f);
+        color: var(--gray-3f);
         font-weight: 600;
     }
 
@@ -216,7 +216,7 @@
             }
 
             .card-description h3 {
-                color: var(--gray58);
+                color: var(--gray-58);
                 margin-bottom: 15px;
             }
 
@@ -268,7 +268,7 @@
                 position: relative;
 
                 h3 {
-                    color: var(--gray58);
+                    color: var(--gray-58);
                     margin-bottom: 15px;
                 }
 

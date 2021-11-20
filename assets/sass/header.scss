@@ -7,6 +7,9 @@
     height: 76px;
     justify-content: flex-start;
     text-align: left;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 
     .home-logo-ifood{
     display: none;
@@ -79,7 +82,7 @@
              
              display: flex;
                span {
-                  color: var(--gray58);
+                  color: var(--gray-58);
                   font-size: 14px;
                    font-weight: 600;
                    margin-right: 6px;

@@ -1,4 +1,8 @@
 footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 5;
+    width: 100%;
     background-color: var(--white);
     .footer-mobile {
         margin: 0;
@@ -33,7 +37,8 @@ footer {
 
 @media(min-width: 960px) {
     footer {
-        width: 100vw;
+        position: relative;
+        width: 100%;
 
         .footer-mobile {
             display: none;

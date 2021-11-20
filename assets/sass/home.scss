@@ -1,31 +1,15 @@
-
-
-.cuppons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    width: 100vw;
-    background-color: #50A773;
-
-    img {
-        padding: auto;
-        margin: 0 20px;
-    }
-
-    span {
-        padding: 0 10px;
-        color: var(--white);
-    }
-}
-
-
 main#home {
     @include limit-container;
     background-color: var(--white);
     .btn-group {
-        margin: 0 24px;
-        margin-bottom: 42px;
+        margin-bottom: var(--space);
+        padding: 10px 0;
+        background-color: var(--white);
+        position: sticky;
+        top: 75px;
+        z-index: 9;
+        display: flex;
+        overflow-x: auto;
 
         button {
             border: 1px solid var(--gray-ccc);
@@ -40,6 +24,8 @@ main#home {
             background-color: transparent;
             color: var(--gray-ccc);
             padding: 10px 15px;
+            flex-shrink: 0;
+            margin: 5px;
 
             span {
                 color: var(--gray-87);
@@ -117,7 +103,7 @@ main#home {
             }
 
             span:nth-child(2) {
-                color: #EA1D2C;
+                color: var(--red);
                 font-size: 14px;
             }
         }
@@ -152,8 +138,6 @@ main#home {
         .club-market {
             display: flex;
             flex-direction: column;
-            // margin: 14px 44px 0 0;
-            // justify-content: center;
             align-items: center;
             line-height: 60px;
 
@@ -162,9 +146,9 @@ main#home {
                 text-align: center;
                 border-radius: 12%;
 
-                img {
-                    padding: 0px;
-                }
+            }
+            img {
+                border-radius: 10px;
             }
         }
     }
@@ -182,7 +166,7 @@ main#home {
             }
 
             span:nth-child(2) {
-                color: #EA1D2C;
+                color: var(--red);
                 font-size: 14px;
             }
         }
@@ -315,5 +299,28 @@ main#home {
                 max-width: 30%;
             }
         }
+    }
+}
+
+.cuppons {
+    display: none;
+    @media (min-width:960px) {
+        display: flex;
+    }
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: #50A773;
+    margin-bottom: var(--space);
+
+    img {
+        padding: auto;
+        margin: 0 20px;
+    }
+
+    span {
+        padding: 0 10px;
+        color: var(--white);
     }
 }
