@@ -15,18 +15,19 @@
 
     span {
         padding: 0 10px;
-        color: #fff;
+        color: var(--white);
     }
 }
 
 
 main#home {
+    background-color: var(--white);
     .btn-group {
         margin: 0 24px;
         margin-bottom: 42px;
 
         button {
-            border: 1px solid #CCC;
+            border: 1px solid var(--gray-ccc);
             height: 40px;
             justify-content: center;
             align-items: center;
@@ -36,14 +37,14 @@ main#home {
             cursor: pointer;
             border-radius: 20px;
             background-color: transparent;
-            color: #CCC;
+            color: var(--gray-ccc);
             padding: 10px 15px;
 
             span {
-                color: #878787;
+                color: var(--gray-87);
 
                 img {
-                    color: #878787;
+                    color: var(--gray-87);
                 }
             }
         }
@@ -72,7 +73,7 @@ main#home {
                     font-weight: 300;
                     margin: 0;
                     font-size: 13px;
-                    color: #878787;
+                    color: var(--gray-87);
                 }
             }
         }
@@ -129,7 +130,7 @@ main#home {
             li {
                 justify-content: center;
                 text-align: center;
-                color: #878787;
+                color: var(--gray-87);
                 min-width: 114px;
 
                 img {
@@ -194,7 +195,7 @@ main#home {
             li {
                 justify-content: center;
                 text-align: center;
-                color: #878787;
+                color: var(--gray-87);
                 min-width: 114px;
 
                 img {
@@ -239,7 +240,7 @@ main#home {
             li {
                 justify-content: center;
                 text-align: center;
-                color: #878787;
+                color: var(--gray-87);
                 flex-shrink: 0;
 
                 img {
