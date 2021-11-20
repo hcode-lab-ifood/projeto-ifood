@@ -2,7 +2,7 @@
 .home-guest {
     background-color: var(--white);
     overflow-x: hidden;
-    #home {
+    #home-guest {
         margin-top: 80px;
         + footer .footer-guest {
             display: block;
@@ -531,7 +531,7 @@
         .carousel, .banners, .cta, .banner-full, .banner-full + a {
             @include limit-container;
         }
-        #home {
+        #home-guest {
             margin-top: 145px;
             + footer {
                 @include limit-container;
