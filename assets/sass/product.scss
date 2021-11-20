@@ -1,0 +1,141 @@
+body {
+    background: gray;
+    padding-top: 40px;
+
+    #product {
+        background: #ffffffc4;
+        border-radius: 10px;
+        width: 100%;
+
+        .bg-overlay {
+            display: flex;
+            flex-direction: column;
+
+            .product-photo {
+                padding: 18px;
+                display: flex;
+                flex-direction: column;
+
+                >picture {
+                    align-self: center;
+                }
+            }
+        }
+
+        .product-description {
+            padding: 18px;
+            background: #fff;
+            border-radius: 10px;
+
+            h1 {
+                font-size: 19px;
+                font-weight: 600;
+            }
+
+            .description {
+                display: flex;
+                align-items: flex-end;
+
+                .price {
+                    color: #50A773;
+                    font-size: 19px;
+                    font-weight: 600;
+                    display: flex;
+                    margin-right: 13px;
+                }
+
+                .text-description {
+                    font-size: 11px;
+                    margin-bottom: 2px;
+                    margin-right: 13px;
+                }
+
+                .see-more {
+                    font-size: 11px;
+                    font-size: 14px;
+                    color: red;
+                }
+            }
+
+            .discount {
+                display: flex;
+
+                .label {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40px;
+                    height: 20px;
+                    background: #50A773;
+                    color: #fff;
+                    font-size: 12px;
+                    margin-right: 13px;
+                }
+
+                .strike {
+                    font-size: 14px;
+                    color: #A6A6B9;
+                    text-decoration: line-through;
+                }
+            }
+
+            >hr {
+                margin: 25px 0;
+            }
+
+            .btn-red {
+                display: block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 50px;
+                background: red;
+                color: #fff;
+                border-radius: 5px;
+                margin-bottom: 30px;
+            }
+
+            .same-hall {
+                h2 {
+                    width: 100%;
+                    font-size: 15px;
+                    color: #3F3E3E;
+                    font-weight: 600;
+                    margin-bottom: 25px;
+                }
+
+                .product-same-hall {
+                    display: flex;
+
+                    li {
+                        width: 99px;
+                        height: 233px;
+                        background: #fff;
+
+                        >a {
+                            width: 99px;
+                            img {
+                                background: #f2f2f2;
+                                border-radius: 5px;
+                            }
+                            h3{
+                                color: #50A773;
+                                font-size: 14px;
+                            }
+                            p{
+                               font-size: 13px; 
+                               small{
+                                   font-size: 9px;
+                               }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .box-store, .ingredients {
+            display: none;
+        }
+    }
+}

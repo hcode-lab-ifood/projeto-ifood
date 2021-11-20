@@ -1,4 +1,5 @@
 footer {
+    background-color: var(--white);
     .footer-mobile {
         margin: 0;
         display: flex;
@@ -13,7 +14,7 @@ footer {
             align-items: center;
             justify-content: space-around;
             font-size: 12px;
-            color: #4B4B4B;
+            color: var(--gray-4b);
             text-decoration: none;
             margin-right: 10px;
 
@@ -59,14 +60,14 @@ footer {
 
                     >h2 {
                         font-size: 17px;
-                        color: #3F3E3E;
+                        color: var(--gray-3f);
                         font-weight: 600;
                     }
 
                     >a {
                         text-decoration: none;
                         font-size: 14px;
-                        color: #EA1D2C;
+                        color: var(--red);
                         margin-right: 0px;
                     }
                 }
@@ -82,7 +83,7 @@ footer {
                     margin-bottom: 30px;
 
                     >a {
-                        color: #71757A;
+                        color: var(--gray-71);
                         text-decoration: none;
                         font-size: 14px;
                         font-weight: 400;
@@ -98,7 +99,7 @@ footer {
                 .column-ifood {
                     h2 {
                         font-size: 17px;
-                        color: #3F3E3E;
+                        color: var(--gray-3f);
                         font-weight: 600;
                         margin: 20px 0;
                     }
@@ -112,7 +113,7 @@ footer {
                         margin-bottom: 30px;
 
                         a {
-                            color: #71757A;
+                            color: var(--gray-71);
                             text-decoration: none;
                             font-size: 14px;
                             font-weight: 400;
@@ -124,7 +125,7 @@ footer {
                 .column-findit-out {
                     h2 {
                         font-size: 17px;
-                        color: #3F3E3E;
+                        color: var(--gray-3f);
                         font-weight: 600;
                         margin: 20px 0;
                     }
@@ -134,7 +135,7 @@ footer {
                         margin-bottom: 30px;
 
                         a {
-                            color: #71757A;
+                            color: var(--gray-71);
                             text-decoration: none;
                             font-size: 14px;
                             font-weight: 400;
@@ -148,7 +149,7 @@ footer {
 
                     h2 {
                         font-size: 17px;
-                        color: #3F3E3E;
+                        color: var(--gray-3f);
                         font-weight: 600;
                         margin: 20px 0 50px 0;
                     }
@@ -203,7 +204,7 @@ footer {
 
                 .informations {
                     font-size: 11px;
-                    color: #71757A;
+                    color: var(--gray-71);
                 }
 
                 .terms-links {
@@ -259,7 +260,7 @@ footer {
                 .informations {
                     width: 560px;
                     font-size: 12px;
-                    color: #71757A;
+                    color: var(--gray-71);
                 }
 
                 .terms-links {
