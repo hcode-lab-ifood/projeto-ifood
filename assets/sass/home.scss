@@ -55,9 +55,10 @@ main#home {
 
         .item {
             display: flex;
+            overflow-x: auto;
 
             li {
-                justify-content: center;
+                flex-shrink: 0;
                 text-align: center;
                 padding: 0 12px;
 
@@ -89,8 +90,7 @@ main#home {
             overflow-x: auto;
 
             li {
-                justify-content: center;
-                text-align: center;
+                flex-shrink: 0;
 
                 img {
                     width: 392px;
@@ -124,6 +124,7 @@ main#home {
             display: flex;
             margin-top: 14px;
             margin-bottom: 44px;
+            overflow-x: auto;
 
             li {
                 justify-content: center;
@@ -188,6 +189,7 @@ main#home {
             display: flex;
             margin-top: 14px;
             margin-bottom: 40px;
+            overflow-x: auto;
 
             li {
                 justify-content: center;
@@ -213,15 +215,13 @@ main#home {
         .select {
             display: flex;
             flex-direction: column;
-            margin: 14px 44px 0 0;
+            margin: 14px auto 0;
             justify-content: center;
             align-items: center;
             line-height: 45px;
-
-            ul {
-                justify-content: center;
-                text-align: center;
-
+            text-align: center;
+            a {
+                display: block;
                 img {
                     padding: 0px;
                 }
@@ -234,11 +234,13 @@ main#home {
             display: flex;
             margin-top: 14px;
             margin-bottom: 45px;
+            overflow-x: auto;
 
             li {
                 justify-content: center;
                 text-align: center;
                 color: #878787;
+                flex-shrink: 0;
 
                 img {
                     // margin: 0;
