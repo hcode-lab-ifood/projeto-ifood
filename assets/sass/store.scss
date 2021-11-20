@@ -1,5 +1,5 @@
 #body-store {
-    background-color: #fff;
+    background-color:var(--white);
 }
 
 #banner {
@@ -26,7 +26,7 @@
             display: flex;
             align-items: center;
             margin-left: 20px;
-            color: #3E3E3E;
+            color:var(--gray3f);
             font-weight: lighter;
 
                 #logo-store {
@@ -38,7 +38,7 @@
                 #store-title {
                     margin-left: 20px;
                     font-size: 32px;
-                    font-family: 'Poppins-Regular';
+                    font-weight: 400;
                 }
 
                 .rating {
@@ -54,11 +54,10 @@
                 #gold-star {
                     width: 20px;
                     height: 20px;
-                    color: #cf8c1d;
                 }
 
                 #star-number {
-                    color: #cf8c1d;
+                    color: var(--orange);
                     margin-left: 20px;
                 }
          }
@@ -100,7 +99,7 @@
         #input-search {
             display: flex;
             width: 70%;
-            border: 1px solid #ccc;
+            border: 1px solid var(--gray-ccc);
             border-radius: 5px;
             height: 70px;
 
@@ -128,7 +127,7 @@
                 transition: all .3s;
                 &:hover {
                     cursor: pointer;
-                    box-shadow: 0 0 1px 1px #ccc;
+                    box-shadow: 0 0 1px 1px var(--gray-ccc);
                 }
 
                 #icon-moto {
@@ -163,7 +162,8 @@
     .subtitle {
         margin: 30px 0;
         padding-left: 20px;
-        color: #3F3E3E;
+        color: var(--gray3f);
+        font-weight: 600;
     }
 
     #carousel-container {
@@ -179,7 +179,7 @@
             width: 410px;
             height: 410px;
             margin: 0 10px;
-            border: 1px solid #ccc;
+            border: 1px solid var(--gray-ccc);
             padding: 0 20px;
             border-radius: 5px;
             position: relative;
@@ -188,7 +188,7 @@
             transition: all .3s;
             &:hover {
                 cursor: pointer;
-                box-shadow: 0 0 1px 1px #ccc;
+                box-shadow: 0 0 1px 1px var(--gray-ccc)
             }
 
             .card-image1 {
@@ -216,18 +216,18 @@
             }
 
             .card-description h3 {
-                color: #585858;
+                color: var(--gray58);
                 margin-bottom: 15px;
             }
 
             .card-description p {
                 font-size: 13px;
-                color: #717171;
+                color: var(--gray-71);
             }
 
             .card-price {
                 font-size: 16px;
-                color: #499869;
+                color: var(--green);
                 position: absolute;
                 bottom: 0;
                 margin-bottom: 10px;
@@ -250,7 +250,7 @@
         .offer {
             width: 49%;
             height: 250px;
-            border: 1px solid #ccc;
+            border: 1px solid var(--gray-ccc);
             display: flex;
             justify-content: space-between;
             margin-bottom: 30px;
@@ -258,7 +258,7 @@
             transition: all .3s;
             &:hover {
                     cursor: pointer;
-                    box-shadow: 0 0 1px 1px #ccc;
+                    box-shadow: 0 0 1px 1px var(--gray-ccc);
                 }
 
             .offer-description {
@@ -268,19 +268,19 @@
                 position: relative;
 
                 h3 {
-                    color: #585858;
+                    color: var(--gray58);
                     margin-bottom: 15px;
                 }
 
                 p {
                     font-size: 13px;
-                    color: #717171;
+                    color:var(--gray-71);
                 }
 
                 .offer-price {
                     position: absolute;
                     bottom: 30px;
-                    color: #499869;
+                    color: var(--green);
                 }
             }
 
