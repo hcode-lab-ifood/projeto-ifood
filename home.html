@@ -2,34 +2,109 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="assets/images/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="assets/css/main.css">
-    <title> Sass </title>
+    <title>Ifood</title>
 </head>
 
 <body>
     <header id="header">
-        <div class="logo">
-            <img src="assets/images/index/ifood-logo.png" alt="">
-        </div>
-        <div class="cuppons"><img src="assets/images/store/Frame.png" alt="">
-            <span>Voce tens 16 cuppons! Aproveite os seus descontos</span>
-            <img src="assets/images/store/Vector.png" alt="">
-        </div>
-    </header>
 
-    <main>
+        <div class="home-logo-ifood">
+            <img src="assets/images/login/ifood-logo.png" class="logo-ifood" alt="Logo Ifood">
+
+        </div>
+
+
+        <div class="overlay">
+            
+            <button type="button" class="btn-burger">
+                <img src="assets/images/index/burger-icon.png" class="burger" alt="burger-icon">
+
+            </button>
+
+        
+
+            <div class="hidden-mobile">
+                <h1 id="h1">Restaurante</h1>
+                <button type="button" class="btn-arrow-down">
+                    <img src="assets/images/arrow-down.png" class="arrow-down" alt="arrow-down">
+                </button>
+            </div>
+
+            <div class="campo-pesquisa">
+                <input type="search" id="busca" placeholder="Busque por item ou loja" >
+                <label for="busca" ><img src="assets/images/search-black.png" alt="search-black"></label>
+
+
+
+            </div>
+
+            
+            <ul>
+                <li id="l1">Entregar em</li>
+                <li id="l2">
+                    <img src="assets/images/house-icon.png" class="house" alt="house-icon">
+                    <span>Rua José Bonifácio, 162</span>
+                    <button type="button" class="btn-arrow-down">
+                        <img src="assets/images/arrow-down.png" class="arrow-down" alt="arrow-down">
+                    </button>
+                </li>
+            </ul>
+
+            
+
+            <div class="icones">
+
+                <ul class="lista-icones">
+                    <li id="icone1"><img src="assets/images/discount.png" alt="discount"></li>
+                    <li id="icone2"><img src="assets/images/profile.png" alt="profile"></li>
+                    <li id="icone3"><img src="assets/images/bag.png" alt="bag"></li>
+                </ul>
+
+            </div>
+
+           
+        
+        </div>
+
+
+    </header>
+    <div class="cuppons"><img src="assets/images/index/cupon-icon.png" alt="">
+        <span>Você tens 16 cuppons! Aproveite os seus descontos</span>
+        <img src="assets/images/index/arrow-down-white.png" alt="">
+    </div>
+
+
+    <main id="home">
         <div class="btn-group">
             <button type="button" class="btn">
                 <span>
                     Ordenar</span>
-                <img src="assets/images/store/arrow-down-gray 1.png" alt="">
+                <img src="assets/images/index/arrow-down-gray.png" alt="">
             </button>
 
             <button type="button" class="btn">
-                <img src="assets/images/store/walking-man 1.png" alt="">
+                <img src="assets/images/index/walking-man.png" alt="">
                 <span>Pra treinar</span>
             </button>
 
@@ -38,69 +113,68 @@
 
             <button type="button" class="btn"><span>
                     Vale-refeição</span>
-                <img src="assets/images/store/arrow-down-gray 1.png" alt="">
+                <img src="assets/images/index/arrow-down-gray.png" alt="">
             </button>
 
             <button type="button" class="btn"> <span>Distância</span>
-                <img src="assets/images/store/arrow-down-gray 1.png" alt="">
+                <img src="assets/images/index/arrow-down-gray.png" alt="">
             </button>
 
             <button type="button" class="btn"><span>Entrega parceira </span>
             </button>
 
             <button type="button" class="btn"> <span>Filtros</span>
-                <img src="assets/images/store/Union.png" alt="">
+                <img src="assets/images/index/filter.png" alt="">
             </button>
 
             <button type="button" class="btn"> <span>Limpar</span>
-                <img src="assets/images/store/arrow-down-gray 1.png" alt="">
             </button>
         </div>
 
         <section id="products">
             <ul class="item">
                 <li>
-                    <img src="/assets/images/store/doces 2.png" alt="" />
+                    <img src="assets/images/index/mercado.png" alt="" />
                     <p>Mercado</p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/doces 1.png" alt="" />
+                    <img src="assets/images/index/doces.png" alt="" />
                     <p>Doces & </p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/lanches 1.png" alt="" />
+                    <img src="assets/images/index/lanches.webp" alt="" />
                     <p>Lanches </p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/açai 1.png" alt="" />
+                    <img src="assets/images/index/acai.webp" alt="" />
                     <p>Açai</p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/promocao 1.png" alt="" />
+                    <img src="assets/images/index/promocao.webp" alt="" />
                     <p>Promoções</p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/promocao 2.png" alt="" />
+                    <img src="assets/images/index/vale-refeicao.webp" alt="" />
                     <p>Vale-refeições</p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/promocao 3.png" alt="" />
+                    <img src="assets/images/index/pizza.webp" alt="" />
                     <p>Pizza</p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/promocao 4.png" alt="" />
+                    <img src="assets/images/index/vegetariano.webp" alt="" />
                     <p>Vegetariana</p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/promocao 5.png" alt="" />
+                    <img src="assets/images/index/japonesa.webp" alt="" />
                     <p>Japonesa</p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/promocao 6.png" alt="" />
+                    <img src="assets/images/index/brasileira.webp" alt="" />
                     <p>Brasileira</p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/promocao 7.png" alt="" />
+                    <img src="assets/images/index/bebidas.webp" alt="" />
                     <p>Bebidas</p>
                 </li>
             </ul>
@@ -109,16 +183,16 @@
         <section id="promo">
             <ul class="sold">
                 <li>
-                    <img src="/assets/images/store/Untitled.png" alt="" />
+                    <img src="assets/images/index/show-ofertas.webp" alt="" />
                 </li>
                 <li>
-                    <img src="/assets/images/store/jantar.png" alt="" />
+                    <img src="assets/images/index/jantar.webp" alt="" />
                 </li>
                 <li>
-                    <img src="/assets/images/store/pastel.png" alt="" />
+                    <img src="assets/images/index/pastel.jpg" alt="" />
                 </li>
                 <li>
-                    <img src="/assets/images/store/saudaveis.png" alt="" />
+                    <img src="assets/images/index/saudaveis.jpg" alt="" />
                 </li>
             </ul>
         </section>
@@ -130,46 +204,46 @@
             </header>
             <ul class="last">
                 <li>
-                    <img src="/assets/images/store/kfc 1.png" alt="" />
+                    <img src="assets/images/index/kfc.png" alt="" />
                     <p>KFC</p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/monster 1.png" alt="" />
+                    <img src="assets/images/index/monster.png" alt="" />
                     <p>Monster Açai </p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/big 1.png" alt="" />
+                    <img src="assets/images/index/big.png" alt="" />
                     <p> Big <br> Indianópolis </p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/cacau-show 1.png" alt="" />
+                    <img src="assets/images/index/cacau-show.png" alt="" />
                     <p>Cacau Show
                         <br> Chocolates - ... </p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/mineiro 9.png" alt="" />
+                    <img src="assets/images/index/mineiro.png" alt="" />
                     <p>Mineiro
                         <br> Delivery... </p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/pao-acucar 1.png" alt="" />
+                    <img src="assets/images/index/pao-acucar.png" alt="" />
                     <p>Pão de Açucar
                         <br> - Washington... </p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/lig-lig 1.png" alt="" />
+                    <img src="assets/images/index/lig-lig.png" alt="" />
                     <p>Lig Lig </p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/dominos-pizza 1.png" alt="" />
+                    <img src="assets/images/index/dominos-pizza.png" alt="" />
                     <p>Domino´s Pizza </p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/subway 2.png" alt="" />
+                    <img src="assets/images/index/subway.png" alt="" />
                     <p>Subway </p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/taco-bell 1.png" alt="" />
+                    <img src="assets/images/index/taco-bell.png" alt="" />
                     <p>Taco Bell </p>
                 </li>
             </ul>
@@ -178,11 +252,11 @@
         <section id="ifood-club-market">
             <ul class="club-market">
                 <li>
-                    <img src="/assets/images/store/queridinhos 1.png" alt="" />
+                    <img src="assets/images/index/queridinhos.jpg" alt="" />
                 </li>
 
                 <li>
-                    <img src="/assets/images/store/mercado 1.png" alt="" />
+                    <img src="assets/images/index/mercado.jpg" alt="" />
                 </li>
             </ul>
         </section>
@@ -194,44 +268,44 @@
             </header>
             <ul class="famous">
                 <li>
-                    <img src="/assets/images/store/kfc 1.png" alt="" />
+                    <img src="assets/images/index/kfc.png" alt="" />
                     <p>KFC</p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/monster 1.png" alt="" />
+                    <img src="assets/images/index/monster.png" alt="" />
                     <p>Monster Açai </p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/big 1.png" alt="" />
+                    <img src="assets/images/index/big.png" alt="" />
                     <p> Big <br> Indianópolis </p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/cacau-show 1.png" alt="" />
+                    <img src="assets/images/index/cacau-show.png" alt="" />
                     <p>Cacau Show
                         <br> Chocolates - ... </p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/ragazzo 1.png" alt="" />
+                    <img src="assets/images/index/ragazzo.png" alt="" />
                     <p>Ragazo!</p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/peg-pese 1.png" alt="" />
+                    <img src="assets/images/index/peg-pese.png" alt="" />
                     <p>Peg Pese </p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/subway 2.png" alt="" />
+                    <img src="assets/images/index/subway.png" alt="" />
                     <p>Subway </p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/pizza-hut 1.png" alt="" />
+                    <img src="assets/images/index/pizza-hut.png" alt="" />
                     <p>Pizza Hut </p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/popeyes 1.png" alt="" />
+                    <img src="assets/images/index/popeyes.png" alt="" />
                     <p>Popeyes </p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/habibs 1.png" alt="" />
+                    <img src="assets/images/index/habibs.png" alt="" />
                     <p>Habib's </p>
                 </li>
             </ul>
@@ -240,7 +314,7 @@
         <section id="gourmet">
             <ul class="select">
                 <li>
-                    <img src="/assets/images/store/image 13.png" alt="" />
+                    <img src="assets/images/index/banner-gourmet.png" alt="" />
                 </li>
             </ul>
         </section>
@@ -248,89 +322,406 @@
         <section id="express-stores">
             <ul class="takaway">
                 <li>
-                    <img src="/assets/images/store/15-min.png" alt="" />
+                    <img src="assets/images/index/15-min.webp" alt="" />
                     <p>Express</p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/bebidas.png" alt="" />
+                    <img src="assets/images/index/bebidas.webp" alt="" />
                     <p>Bebidas</p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/farmacia.png" alt="" />
+                    <img src="assets/images/index/farmacia.webp" alt="" />
                     <p> Farmancía </p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/pet.png" alt="" />
+                    <img src="assets/images/index/pet.webp" alt="" />
                     <p>Pet</p>
                 </li>
                 <li>
-                    <img src="/assets/images/store/conveniencia.png" alt="" />
+                    <img src="assets/images/index/conveniencia.webp" alt="" />
                     <p>Conveniência</p>
                 </li>
             </ul>
         </section>
 
-        <!-- <section id="store">
+        <section id="store">
             <header>
                 <span>Lojas</span>
             </header>
             <div class="stores">
-                <ul class="store1">
-                    <li>
-                        <img src="assets/images/store/mania-churrasco 1.png" alt="">
-                        <span class="text">
-                            <h4>Mania de Churrascaria</h4>
-                            <span>
-                                <img src="assets/images/store/gold-star 1.png" alt="">
-                            </span> 4.7 &bull; Brasileira
-                            &bull; 4.4 km
-                            <p> 43-53 min &bull; R$ 13,99
-                            </p>
-                        </span>
-                    </li>
-                </ul>
+                <div class="img">
+                    <img src="assets/images/index/mania-churrasco.jpg" alt="">
+                </div>
+                <div class="txt">
+                    <p>Mania de Churrasco - Interlagos Shop</p>
+                    <small>
+                        <img src="assets/images/gold-star.png" alt="gold star" class="star" height="10" width="10"/>
+                        4.7  • Brasileira • 4.4 km
+                    </small>
+                    <br>
+                    <small>43-53 min • R$ 13,99 </small>
+                </div>
+                <div class="red-star">
+                    <img src="assets/images/red-star.png" alt="red star" width="15" height="15" />
+                </div>
             </div>
 
-        </section> -->
+            <div class="stores">
+                <div class="img">
+                    <img src="assets/images/index/boali.jpg" alt="">
+                </div>
+                <div class="txt">
+                    <p>Boali - Conceição</p>
+                    <small>
+                        <img src="assets/images/gold-star.png" alt="gold star" class="star" height="10" width="10"/>
+                        4.6  • Brasileira • 3.2 km
+                    </small>
+                    <br>
+                    <small>37-47 min • R$ 7,99 </small>
+                </div>
+                <div class="red-star">
+                    <img src="assets/images/red-star.png" alt="red star" width="15" height="15" />
+                </div>
+            </div>
 
-        <!-- <section id="stores">
-            <header>
-                <span>Lojas</span>
-            </header>
-            <ul class="grid-stores">
-                <li>
-                    <img src="assets/images/store/mania-churrasco 1.png" alt="">
-                    <span class="text">
-                        <h5>Mania de Churrasco - Interlagos Shop <small><img src="assets/images/store/red-star 1.png"
-                                    alt=""></small></h5>
-                        <span>
-                            <img src="assets/images/store/gold-star 1.png" alt="">
-                        </span> 4.7 &bull; Brasileira
-                        &bull; 4.4 km
-                        <p> 43-53 min &bull; R$ 13,99
-                        </p>
-                    </span>
-                </li>
-            </ul>
-        </section> -->
+            <div class="stores">
+                <div class="img">
+                    <img src="assets/images/index/coco-bambu.jpg" alt="">
+                </div>
+                <div class="txt">
+                    <p>Coco Bambu - Sp Market</p>
+                    <small>
+                        <img src="assets/images/gold-star.png" alt="gold star" class="star" height="10" width="10"/>
+                        4.4  • Frutos do Mar • 6.4 km
+                    </small>
+                    <br>
+                    <small>60-70 min • R$ 20,99 </small>
+                </div>
+                <div class="red-star">
+                    <img src="assets/images/red-star.png" alt="red star" width="15" height="15" />
+                </div>
+            </div>
 
-        <section class="stores">
-            <header>
-                <span>Lojas</span>
-            </header>
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
+            <div class="stores">
+                <div class="img">
+                    <img src="assets/images/index/esfiha-imigrantes.jpg" alt="">
+                </div>
+                <div class="txt">
+                    <p>Esfiha Imigrantes</p>
+                    <small>
+                        <img src="assets/images/gold-star.png" alt="gold star" class="star" height="10" width="10"/>
+                        4.8  • Árabe • 6.6 km
+                    </small>
+                    <br>
+                    <small>29-39 min • R$ 17,99 </small>
+                </div>
+                <div class="red-star">
+                    <img src="assets/images/red-star.png" alt="red star" width="15" height="15" />
+                </div>
+            </div>
+
+            <div class="stores">
+                <div class="img">
+                    <img src="assets/images/index/barbosa.jpg" alt="">
+                </div>
+                <div class="txt">
+                    <p>Barbosa - Loja 38 - Jd. Pedreira</p>
+                    <small>
+                        <img src="assets/images/gold-star.png" alt="gold star" class="star" height="10" width="10"/>
+                        4.6  • Mercado • 5.0 km
+                    </small>
+                    <br>
+                    <small>74-84 min • R$ 10,99 </small>
+                </div>
+                <div class="red-star">
+                    <img src="assets/images/red-star.png" alt="red star" width="15" height="15" />
+                </div>
+            </div>
+
+            <div class="stores">
+                <div class="img">
+                    <img src="assets/images/index/galetos.jpg" alt="">
+                </div>
+                <div class="txt">
+                    <p>Galeto´s Morumbi</p>
+                    <small>
+                        <img src="assets/images/gold-star.png" alt="gold star" class="star" height="10" width="10"/>
+                        4.6  • Brasileira • 8.1 km
+                    </small>
+                    <br>
+                    <small>42-52 min • R$ 19,99 </small>
+                </div>
+                <div class="red-star">
+                    <img src="assets/images/red-star.png" alt="red star" width="15" height="15" />
+                </div>
+            </div>
         </section>
+
 
         <!-- footer com heigh: 130px -->
     </main>
+
+    <footer>
+        <div class="footer-mobile">
+            <a href="index.html#home"><img src="assets/images/house-icon-black.png" alt="botão início">Início</a>
+            <a href="index.html#home"><img src="assets/images/search-black.png" alt="botão início">Buscar</a>
+            <a href="index.html#home"><img src="assets/images/request.png" alt="botão início">Pedidos</a>
+            <a href="index.html#home"><img src="assets/images/profile.png" alt="botão início">Perfil</a>
+        </div>
+
+        <div class="footer-desktop">
+            <hr />
+            <section class="cities">
+                <div class="title">
+                    <h2 class="footer-title">Explore por cidades</h2>
+                    <a href="https://www.ifood.com.br/cidades-atendidas" class="more-cities" target="blanck">Ver
+                        todas</a>
+                </div>
+                <ul class="footer-list-cities">
+                    <li class="footer-list-item">
+                        <a href="https://www.ifood.com.br/delivery/belo-horizonte-mg" class="footer-text-link"
+                            title="Belo Horizonte">
+                            Belo Horizonte
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="https://www.ifood.com.br/delivery/brasilia-df" class="footer-text-link"
+                            title="Brasília">
+                            Brasília
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="https://www.ifood.com.br/delivery/campinas-sp" class="footer-text-link"
+                            title="Campinas">
+                            Campinas
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="https://www.ifood.com.br/delivery/curitiba-pr" class="footer-text-link"
+                            title="Curitiba">
+                            Curitiba
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="https://www.ifood.com.br/delivery/goiania-go" class="footer-text-link" title="Goiânia">
+                            Goiânia
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="https://www.ifood.com.br/delivery/guarulhos-sp" class="footer-text-link"
+                            title="Guarulhos">
+                            Guarulhos
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="https://www.ifood.com.br/delivery/joao-pessoa-pb" class="footer-text-link">
+                            João Pessoa
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="https://www.ifood.com.br/delivery/natal-rn" class="footer-text-link">
+                            Natal
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="https://www.ifood.com.br/delivery/niteroi-rj" class="footer-text-link">
+                            Niterói
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="https://www.ifood.com.br/delivery/porto-alegre-rs" class="footer-text-link"
+                            title="Porto Alegre">
+                            Porto Alegre
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="https://www.ifood.com.br/delivery/ribeirao-preto-sp" class="footer-text-link"
+                            title="Ribeirão Preto">
+                            Ribeirão Preto
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="https://www.ifood.com.br/delivery/rio-de-janeiro-rj" class="footer-text-link"
+                            title="Rio de Janeiro">
+                            Rio de Janeiro
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="https://www.ifood.com.br/delivery/salvador-ba" class="footer-text-link"
+                            title="Salvador">
+                            Salvador
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="https://www.ifood.com.br/delivery/santo-andre-sp" class="footer-text-link"
+                            title="Santo André">
+                            Santo André
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="https://www.ifood.com.br/delivery/santos-sp" class="footer-text-link" title="Santos">
+                            Santos
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="https://www.ifood.com.br/delivery/sao-bernardo-do-campo-sp" class="footer-text-link"
+                            title="São Bernardo do Campo">
+                            São Bernardo do Campo
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="https://www.ifood.com.br/delivery/sao-caetano-do-sul-sp" class="footer-text-link"
+                            title="São Caetano do Sul">
+                            São Caetano do Sul
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="https://www.ifood.com.br/delivery/sao-paulo-sp" class="footer-text-link"
+                            title="São Paulo">
+                            São Paulo
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <hr />
+
+            <section class="about">
+                <div class="column-ifood">
+                    <h2 class="footer-about">iFood</h2>
+                    <ul>
+                        <li class="footer-list-item">
+                            <a href="https://institucional.ifood.com.br/?utm_source=site_ifood" target="blanck"
+                                title="Site Institucional">
+                                Site Institucional
+                            </a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="https://www.ifood.com.br/ajuda" target="blanck" title="Fale conosco">
+                                Fale conosco
+                            </a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="https://carreiras.ifood.com.br/" target="blanck" title="Carreiras">
+                                Carreiras
+                            </a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="https://www.ifood.com.co/?utm_source=Site_iFood&utm_medium=Site_iFood&utm_campaign=iFood-Rodape"
+                                target="blanck" title="iFood Colômbia">
+                                iFood Colômbia
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="column-findit-out">
+                    <h2 class="footer-about">Descubra</h2>
+                    <ul>
+                        <li class="footer-list-item">
+                            <a href="https://parceiros.ifood.com.br/" target="blanck"
+                                title="Cadastre seu Restaurante ou Mercado">
+                                Cadastre seu Restaurante ou Mercado
+                            </a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="https://shop.ifood.com.br/?utm_source=Site_iFood&utm_medium=Site_iFood&utm_campaign=iFoodShop-Rodape"
+                                target="blanck" title="iFood Shop">
+                                iFood Shop
+                            </a>
+
+
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="https://empresas.ifood.com.br/ifood-card?utm_source=home_ifood&utm_medium=referral&utm_campaign=botao_header"
+                                target="blanck" title="iFood Card">
+                                iFood Card
+                            </a>
+
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="https://blog-empresas.ifood.com.br/?utm_source=home_ifood&utm_medium=referral&utm_campaign=botao_footer"
+                                target="blanck" title="Blog iFood Empresas">
+                                Blog iFood Empresas
+                            </a>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="column-social">
+                    <h2 class="footer-about">Social</h2>
+                    <ul>
+                        <li class="footer-list-item">
+                            <a href="https://www.facebook.com/iFood/" target="blanck">
+                                <img src="assets/images/face-icon 1.svg" alt="facebook">
+                            </a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="https://twitter.com/ifood" target="blanck">
+                                <img src="assets/images/twitter-icon 1.svg" alt="twitter">
+
+                            </a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="https://www.youtube.com/user/ifooddelivery" target="blanck">
+                                <img src="assets/images/youtube-icon 1.svg" alt="youtube">
+
+                            </a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="https://www.instagram.com/ifoodbrasil/" target="blanck">
+                                <img src="assets/images/instagram-icon 1.svg" alt="instagram">
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <hr />
+
+            <section class="copyright-terms">
+                <a href="#" title="Voltar para a home"><img src="assets/images/index/ifood-logo2.png"
+                        alt="botão volte para a home"></a>
+
+                <div class="informations">
+                    <p class="text-copyright">© Copyright 2021 - iFood - Todos os direitos
+                        reservados iFood com Agência de Restaurantes Online S.A.
+                    </p>
+                    <p class="text-informations">CNPJ 14.380.200/0001-21 / Avenida dos
+                        Autonomistas, nº 1496, Vila Yara, Osasco/SP - CEP 06.020-902
+                    </p>
+                </div>
+                <div class="terms-links">
+                    <ul>
+                        <li>
+                            <a href="https://webmiddleware.ifood.com.br/termos" target="blanck"
+                                title="Termos e condições de Uso">Termos e condição de uso</a>
+                        </li>
+                        <li>
+                            <a href="https://institucional.ifood.com.br/abrindo-a-cozinha/codigo-de-etica/"
+                                target="blanck" title="Termos e condições de Uso">Código de conduta</a>
+                        </li>
+                        <li>
+                            <a href="https://institucional.ifood.com.br/abrindo-a-cozinha/declaracao-privacidade-clientes/"
+                                target="blanck" title="Termos e condições de Uso">
+                                Privacidade
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://webmiddleware.ifood.com.br/seguranca" target="blanck"
+                                title="Termos e condições de Uso">
+                                Dicas de Segurança
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+    </footer>
+
 </body>
 
 </html>

@@ -26,450 +26,303 @@
     <title>Ifood</title>
 </head>
 
-<body>
-    <header id="header">
+<body class="home-guest">
 
-        <div class="home-logo-ifood">
-            <img src="assets/images/login/ifood-logo.png" class="logo-ifood" alt="Logo Ifood">
-
-        </div>
-
-
-        <div class="overlay">
-            
-            <button type="button" class="btn-burger">
-                <img src="assets/images/index/burger-icon.png" class="burger" alt="burger-icon">
-
-            </button>
-
-        
-
-            <div class="hidden-mobile">
-                <h1 id="h1">Restaurante</h1>
-                <button type="button" class="btn-arrow-down">
-                    <img src="assets/images/arrow-down.png" class="arrow-down" alt="arrow-down">
-                </button>
+    <header id="header-guest">
+        <div class="wrap">
+            <div class="mobile-menu">
+                <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="22" height="2" rx="1" fill="#717171"></rect><rect y="8" width="22" height="2" rx="1" fill="#717171"></rect><rect y="16" width="22" height="2" rx="1" fill="#717171"></rect></svg>
             </div>
-
-            <div class="campo-pesquisa">
-                <input type="search" id="busca" placeholder="Busque por item ou loja" >
-                <label for="busca" ><img src="assets/images/search-black.png" alt="search-black"></label>
-
-
-
+            <div class="ifood-logo">
+                <a href="index.html">
+                    <img src="assets/images/index/ifood-logo.svg" alt="Logotipo Ifood" width="80" />
+                </a>
             </div>
-
-            
-            <ul>
-                <li id="l1">Entregar em</li>
-                <li id="l2">
-                    <img src="assets/images/house-icon.png" class="house" alt="house-icon">
-                    <span>Rua José Bonifácio, 162</span>
-                    <button type="button" class="btn-arrow-down">
-                        <img src="assets/images/arrow-down.png" class="arrow-down" alt="arrow-down">
-                    </button>
-                </li>
-            </ul>
-
-            
-
-            <div class="icones">
-
-                <ul class="lista-icones">
-                    <li id="icone1"><img src="assets/images/discount.png" alt="discount"></li>
-                    <li id="icone2"><img src="assets/images/profile.png" alt="profile"></li>
-                    <li id="icone3"><img src="assets/images/bag.png" alt="bag"></li>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Entregador</a>
+                    </li>
+                    <li>
+                        <a href="#">Restaurante e Mercado</a>
+                    </li>
+                    <li>
+                        <a href="#">Carreiras</a>
+                    </li>
+                    <li>
+                        <a href="#">iFood Card</a>
+                    </li>
                 </ul>
-
-            </div>
-
-           
-        
+            </nav>
+            <a href="login.html" class="btn btn-create-account">criar conta</a>
+            <a href="login.html" class="btn btn-signin">Entrar</a>
         </div>
-
-
     </header>
-    <div class="cuppons"><img src="assets/images/index/cupon-icon.png" alt="">
-        <span>Você tens 16 cuppons! Aproveite os seus descontos</span>
-        <img src="assets/images/index/arrow-down-white.png" alt="">
-    </div>
-
 
     <main id="home">
-        <div class="btn-group">
-            <button type="button" class="btn">
-                <span>
-                    Ordenar</span>
-                <img src="assets/images/index/arrow-down-gray.png" alt="">
-            </button>
-
-            <button type="button" class="btn">
-                <img src="assets/images/index/walking-man.png" alt="">
-                <span>Pra treinar</span>
-            </button>
-
-            <button type="button" class="btn"><span class="arrow">Entrega grátis </span>
-            </button>
-
-            <button type="button" class="btn"><span>
-                    Vale-refeição</span>
-                <img src="assets/images/index/arrow-down-gray.png" alt="">
-            </button>
-
-            <button type="button" class="btn"> <span>Distância</span>
-                <img src="assets/images/index/arrow-down-gray.png" alt="">
-            </button>
-
-            <button type="button" class="btn"><span>Entrega parceira </span>
-            </button>
-
-            <button type="button" class="btn"> <span>Filtros</span>
-                <img src="assets/images/index/filter.png" alt="">
-            </button>
-
-            <button type="button" class="btn"> <span>Limpar</span>
-            </button>
-        </div>
-
-        <section id="products">
-            <ul class="item">
+        <section class="section-search">
+            <h1>Tudo pra facilitar seu dia a dia</h1>
+            <p>O que você precisa está aqui. Peça e receba onde estiver.</p>
+            <form action="">
+                <label class="adrress-icon" for="busca">
+                    <img src="assets/images/index/icon-location.svg" alt="Ícone de localização" />
+                </label>
+                <input type="search" name="" id="busca" placeholder="Endereço de entrega e número" />
+                <button type="button" class="btn">Buscar</button>
+            </form>
+        </section>
+        <secttion class="section-categories">
+            <div class="categories-big">
+                <a href="login.html" class="featured featured-restaurant">
+                    <p class="title">Restaurante</p>
+                    <figure>
+                        <img src="assets/images/index/restaurant.webp" alt="">
+                    </figure>
+                    <div class="btn">
+                        Ver opções
+                        <img src="assets/images/index/arrow-right.svg" alt="seta" height="12px" />
+                    </div>
+                </a>
+                <a href="login.html" class="featured featured-market">
+                    <p class="title">Mercado</p>
+                    <figure>
+                        <img src="assets/images/index/market.webp" alt="">
+                    </figure>
+                    <div class="btn">
+                        Buscar lojas
+                        <img src="assets/images/index/arrow-right.svg" alt="seta" height="12px" />
+                    </div>
+                </a>
+            </div>
+            <ul class="categories-small">
                 <li>
-                    <img src="assets/images/index/mercado.png" alt="" />
-                    <p>Mercado</p>
+                    <a href="login.html">
+                        <figure>
+                            <img src="assets/images/index/drinks.webp" alt="Imagem" />
+                            <p>Bebidas&nbsp;<img src="assets/images/arrow-right.svg" alt="Ícone seta abaixo" width="10" height="16" /></p>
+                        </figure>
+                    </a>
                 </li>
                 <li>
-                    <img src="assets/images/index/doces.png" alt="" />
-                    <p>Doces & </p>
+                    <a href="login.html">
+                        <figure>
+                            <img src="assets/images/index/farmacia.webp" alt="Imagem" />
+                            <p>Farmácia&nbsp;<img src="assets/images/arrow-right.svg" alt="Ícone seta abaixo" width="10" height="16" /></p>
+                        </figure>
+                    </a>
                 </li>
                 <li>
-                    <img src="assets/images/index/lanches.webp" alt="" />
-                    <p>Lanches </p>
+                    <a href="login.html">
+                        <figure>
+                            <img src="assets/images/index/15-min.webp" alt="Imagem" />
+                            <p>Express&nbsp;<img src="assets/images/arrow-right.svg" alt="Ícone seta abaixo" width="10" height="16" /></p>
+                        </figure>
+                    </a>
                 </li>
                 <li>
-                    <img src="assets/images/index/acai.webp" alt="" />
-                    <p>Açai</p>
+                    <a href="login.html">
+                        <figure>
+                            <img src="assets/images/index/pet.webp" alt="Imagem" />
+                            <p>Pet shop&nbsp;<img src="assets/images/arrow-right.svg" alt="Ícone seta abaixo" width="10" height="16" /></p>
+                        </figure>
+                    </a>
                 </li>
-                <li>
-                    <img src="assets/images/index/promocao.webp" alt="" />
-                    <p>Promoções</p>
+            </ul>
+        </secttion>
+        <hr />
+        <section class="carousel carousel-best-restaurants">
+            <h2>Os melhores restaurantes</h2>
+            <ul>
+                <li class="restaurant">
+                    <a href="store.htnl">
+                        <div class="image-restaurant">
+                            <img src="assets/images/index/mcdonalds-rounded.jpg" alt="Logotipo" />
+                        </div>
+                        <div class="name">
+                            Mcdonald's
+                            <small>Lanches</small>
+                        </div>
+                        <div class="verified">
+                            <img src="assets/images/index/icon-verified.svg" alt="Verificado" />
+                        </div>
+                    </a>
                 </li>
-                <li>
-                    <img src="assets/images/index/vale-refeicao.webp" alt="" />
-                    <p>Vale-refeições</p>
+                <li class="restaurant">
+                    <a href="store.htnl">
+                        <div class="image-restaurant">
+                            <img src="assets/images/index/coco-bambu.webp" alt="Logotipo" />
+                        </div>
+                        <div class="name">
+                            Coco Bambu
+                            <small>Frutos Do Mar</small>
+                        </div>
+                        <div class="verified">
+                            <img src="assets/images/index/icon-verified.svg" alt="Verificado" />
+                        </div>
+                    </a>
                 </li>
-                <li>
-                    <img src="assets/images/index/pizza.webp" alt="" />
-                    <p>Pizza</p>
+                <li class="restaurant">
+                    <a href="store.htnl">
+                        <div class="image-restaurant">
+                            <img src="assets/images/index/china-in-box.webp" alt="Logotipo" />
+                        </div>
+                        <div class="name">
+                            China in Box
+                            <small>Chinesa</small>
+                        </div>
+                        <div class="verified">
+                            <img src="assets/images/index/icon-verified.svg" alt="Verificado" />
+                        </div>
+                    </a>
                 </li>
-                <li>
-                    <img src="assets/images/index/vegetariano.webp" alt="" />
-                    <p>Vegetariana</p>
+                <li class="restaurant">
+                    <a href="store.htnl">
+                        <div class="image-restaurant">
+                            <img src="assets/images/index/habibs.webp" alt="Logotipo" />
+                        </div>
+                        <div class="name">
+                            Habib's
+                            <small>Lanches</small>
+                        </div>
+                        <div class="verified">
+                            <img src="assets/images/index/icon-verified.svg" alt="Verificado" />
+                        </div>
+                    </a>
                 </li>
-                <li>
-                    <img src="assets/images/index/japonesa.webp" alt="" />
-                    <p>Japonesa</p>
-                </li>
-                <li>
-                    <img src="assets/images/index/brasileira.webp" alt="" />
-                    <p>Brasileira</p>
-                </li>
-                <li>
-                    <img src="assets/images/index/bebidas.webp" alt="" />
-                    <p>Bebidas</p>
+                <li class="restaurant">
+                    <a href="store.htnl">
+                        <div class="image-restaurant">
+                            <img src="assets/images/index/outback.webp" alt="Logotipo" />
+                        </div>
+                        <div class="name">
+                            Outback Steakhouse
+                            <small>Lanches</small>
+                        </div>
+                        <div class="verified">
+                            <img src="assets/images/index/icon-verified.svg" alt="Verificado" />
+                        </div>
+                    </a>
                 </li>
             </ul>
         </section>
+        <section class="banners">
+            <div>
+                <figure>
+                    <img src="assets/images/index/show-ofertas.webp" alt="banner" />
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="assets/images/index/pastel.jpg" alt="banner" />
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="assets/images/index/saudaveis.jpg" alt="banner" />
+                </figure>
+            </div>
+        </section>
+        <hr />
+        <section class="carousel carousel-best-restaurants">
+            <h2>Os melhores mercados</h2>
+            <ul>
+                <li class="restaurant">
+                    <a href="store.htnl">
+                        <div class="image-restaurant">
+                            <img src="assets/images/index/dia.webp" alt="Logotipo" />
+                        </div>
+                        <div class="name">
+                            Dia Supermercado
+                        </div>
+                    </a>
+                </li>
+                <li class="restaurant">
+                    <a href="store.htnl">
+                        <div class="image-restaurant">
+                            <img src="assets/images/index/big.webp" alt="Logotipo" />
+                        </div>
+                        <div class="name">
+                            Big
+                        </div>
+                    </a>
+                </li>
+                <li class="restaurant">
+                    <a href="store.htnl">
+                        <div class="image-restaurant">
+                            <img src="assets/images/index/eataly.webp" alt="Logotipo" />
+                        </div>
+                        <div class="name">
+                            Eataly
+                        </div>
+                    </a>
+                </li>
+                <li class="restaurant">
+                    <a href="store.htnl">
+                        <div class="image-restaurant">
+                            <img src="assets/images/index/dia.webp" alt="Logotipo" />
+                        </div>
+                        <div class="name">
+                            Dia Supermercado
+                        </div>
+                    </a>
+                </li>
+                <li class="restaurant">
+                    <a href="store.htnl">
+                        <div class="image-restaurant">
+                            <img src="assets/images/index/big.webp" alt="Logotipo" />
+                        </div>
+                        <div class="name">
+                            Big
+                        </div>
+                    </a>
+                </li>
 
-        <section id="promo">
-            <ul class="sold">
-                <li>
-                    <img src="assets/images/index/show-ofertas.webp" alt="" />
-                </li>
-                <li>
-                    <img src="assets/images/index/jantar.webp" alt="" />
-                </li>
-                <li>
-                    <img src="assets/images/index/pastel.jpg" alt="" />
-                </li>
-                <li>
-                    <img src="assets/images/index/saudaveis.jpg" alt="" />
-                </li>
             </ul>
         </section>
-
-        <section id="last-stores">
-            <header>
-                <span>últimas lojas</span>
-                <span>ver mais</span>
-            </header>
-            <ul class="last">
-                <li>
-                    <img src="assets/images/index/kfc.png" alt="" />
-                    <p>KFC</p>
-                </li>
-                <li>
-                    <img src="assets/images/index/monster.png" alt="" />
-                    <p>Monster Açai </p>
-                </li>
-                <li>
-                    <img src="assets/images/index/big.png" alt="" />
-                    <p> Big <br> Indianópolis </p>
-                </li>
-                <li>
-                    <img src="assets/images/index/cacau-show.png" alt="" />
-                    <p>Cacau Show
-                        <br> Chocolates - ... </p>
-                </li>
-                <li>
-                    <img src="assets/images/index/mineiro.png" alt="" />
-                    <p>Mineiro
-                        <br> Delivery... </p>
-                </li>
-                <li>
-                    <img src="assets/images/index/pao-acucar.png" alt="" />
-                    <p>Pão de Açucar
-                        <br> - Washington... </p>
-                </li>
-                <li>
-                    <img src="assets/images/index/lig-lig.png" alt="" />
-                    <p>Lig Lig </p>
-                </li>
-                <li>
-                    <img src="assets/images/index/dominos-pizza.png" alt="" />
-                    <p>Domino´s Pizza </p>
-                </li>
-                <li>
-                    <img src="assets/images/index/subway.png" alt="" />
-                    <p>Subway </p>
-                </li>
-                <li>
-                    <img src="assets/images/index/taco-bell.png" alt="" />
-                    <p>Taco Bell </p>
-                </li>
-            </ul>
-        </section>
-
-        <section id="ifood-club-market">
-            <ul class="club-market">
-                <li>
-                    <img src="assets/images/index/queridinhos.jpg" alt="" />
-                </li>
-
-                <li>
-                    <img src="assets/images/index/mercado.jpg" alt="" />
-                </li>
-            </ul>
-        </section>
-
-        <section id="famous-stores">
-            <header>
-                <span>Famosos no iFood</span>
-                <span>ver mais</span>
-            </header>
-            <ul class="famous">
-                <li>
-                    <img src="assets/images/index/kfc.png" alt="" />
-                    <p>KFC</p>
-                </li>
-                <li>
-                    <img src="assets/images/index/monster.png" alt="" />
-                    <p>Monster Açai </p>
-                </li>
-                <li>
-                    <img src="assets/images/index/big.png" alt="" />
-                    <p> Big <br> Indianópolis </p>
-                </li>
-                <li>
-                    <img src="assets/images/index/cacau-show.png" alt="" />
-                    <p>Cacau Show
-                        <br> Chocolates - ... </p>
-                </li>
-                <li>
-                    <img src="assets/images/index/ragazzo.png" alt="" />
-                    <p>Ragazo!</p>
-                </li>
-                <li>
-                    <img src="assets/images/index/peg-pese.png" alt="" />
-                    <p>Peg Pese </p>
-                </li>
-                <li>
-                    <img src="assets/images/index/subway.png" alt="" />
-                    <p>Subway </p>
-                </li>
-                <li>
-                    <img src="assets/images/index/pizza-hut.png" alt="" />
-                    <p>Pizza Hut </p>
-                </li>
-                <li>
-                    <img src="assets/images/index/popeyes.png" alt="" />
-                    <p>Popeyes </p>
-                </li>
-                <li>
-                    <img src="assets/images/index/habibs.png" alt="" />
-                    <p>Habib's </p>
-                </li>
-            </ul>
-        </section>
-
-        <section id="gourmet">
-            <ul class="select">
-                <li>
-                    <img src="assets/images/index/banner-gourmet.png" alt="" />
-                </li>
-            </ul>
-        </section>
-
-        <section id="express-stores">
-            <ul class="takaway">
-                <li>
-                    <img src="assets/images/index/15-min.webp" alt="" />
-                    <p>Express</p>
-                </li>
-                <li>
-                    <img src="assets/images/index/bebidas.webp" alt="" />
-                    <p>Bebidas</p>
-                </li>
-                <li>
-                    <img src="assets/images/index/farmacia.webp" alt="" />
-                    <p> Farmancía </p>
-                </li>
-                <li>
-                    <img src="assets/images/index/pet.webp" alt="" />
-                    <p>Pet</p>
-                </li>
-                <li>
-                    <img src="assets/images/index/conveniencia.webp" alt="" />
-                    <p>Conveniência</p>
-                </li>
-            </ul>
-        </section>
-
-        <section id="store">
-            <header>
-                <span>Lojas</span>
-            </header>
-            <div class="stores">
-                <div class="img">
-                    <img src="assets/images/index/mania-churrasco.jpg" alt="">
-                </div>
-                <div class="txt">
-                    <p>Mania de Churrasco - Interlagos Shop</p>
-                    <small>
-                        <img src="assets/images/gold-star.png" alt="gold star" class="star" height="10" width="10"/>
-                        4.7  • Brasileira • 4.4 km
-                    </small>
-                    <br>
-                    <small>43-53 min • R$ 13,99 </small>
-                </div>
-                <div class="red-star">
-                    <img src="assets/images/red-star.png" alt="red star" width="15" height="15" />
+        <section class="cta">
+            <div class="item">
+                <figure>
+                    <img src="assets/images/index/delivery-man.svg" alt="Ilustração" />
+                </figure>
+                <div class="content">
+                    <p class="title">Quer fazer entregas pelo iFood?</p>
+                    <p>Faça agora o seu cadastro e comece o quanto antes.</p>
+                    <a href="login.html" class="btn btn-red">Saiba mais</a>
                 </div>
             </div>
-
-            <div class="stores">
-                <div class="img">
-                    <img src="assets/images/index/boali.jpg" alt="">
-                </div>
-                <div class="txt">
-                    <p>Boali - Conceição</p>
-                    <small>
-                        <img src="assets/images/gold-star.png" alt="gold star" class="star" height="10" width="10"/>
-                        4.6  • Brasileira • 3.2 km
-                    </small>
-                    <br>
-                    <small>37-47 min • R$ 7,99 </small>
-                </div>
-                <div class="red-star">
-                    <img src="assets/images/red-star.png" alt="red star" width="15" height="15" />
-                </div>
-            </div>
-
-            <div class="stores">
-                <div class="img">
-                    <img src="assets/images/index/coco-bambu.jpg" alt="">
-                </div>
-                <div class="txt">
-                    <p>Coco Bambu - Sp Market</p>
-                    <small>
-                        <img src="assets/images/gold-star.png" alt="gold star" class="star" height="10" width="10"/>
-                        4.4  • Frutos do Mar • 6.4 km
-                    </small>
-                    <br>
-                    <small>60-70 min • R$ 20,99 </small>
-                </div>
-                <div class="red-star">
-                    <img src="assets/images/red-star.png" alt="red star" width="15" height="15" />
-                </div>
-            </div>
-
-            <div class="stores">
-                <div class="img">
-                    <img src="assets/images/index/esfiha-imigrantes.jpg" alt="">
-                </div>
-                <div class="txt">
-                    <p>Esfiha Imigrantes</p>
-                    <small>
-                        <img src="assets/images/gold-star.png" alt="gold star" class="star" height="10" width="10"/>
-                        4.8  • Árabe • 6.6 km
-                    </small>
-                    <br>
-                    <small>29-39 min • R$ 17,99 </small>
-                </div>
-                <div class="red-star">
-                    <img src="assets/images/red-star.png" alt="red star" width="15" height="15" />
-                </div>
-            </div>
-
-            <div class="stores">
-                <div class="img">
-                    <img src="assets/images/index/barbosa.jpg" alt="">
-                </div>
-                <div class="txt">
-                    <p>Barbosa - Loja 38 - Jd. Pedreira</p>
-                    <small>
-                        <img src="assets/images/gold-star.png" alt="gold star" class="star" height="10" width="10"/>
-                        4.6  • Mercado • 5.0 km
-                    </small>
-                    <br>
-                    <small>74-84 min • R$ 10,99 </small>
-                </div>
-                <div class="red-star">
-                    <img src="assets/images/red-star.png" alt="red star" width="15" height="15" />
-                </div>
-            </div>
-
-            <div class="stores">
-                <div class="img">
-                    <img src="assets/images/index/galetos.jpg" alt="">
-                </div>
-                <div class="txt">
-                    <p>Galeto´s Morumbi</p>
-                    <small>
-                        <img src="assets/images/gold-star.png" alt="gold star" class="star" height="10" width="10"/>
-                        4.6  • Brasileira • 8.1 km
-                    </small>
-                    <br>
-                    <small>42-52 min • R$ 19,99 </small>
-                </div>
-                <div class="red-star">
-                    <img src="assets/images/red-star.png" alt="red star" width="15" height="15" />
+            <div class="item">
+                <figure>
+                    <img src="assets/images/index/store.svg" alt="Ilustração" />
+                </figure>
+                <div class="content">
+                    <p class="title">A sua fome de crescer ta no iFood</p>
+                    <p>Cadastre seu restaurante ou o seu mercado</p>
+                    <a href="login.html" class="btn btn-red">Saiba mais</a>
                 </div>
             </div>
         </section>
-
-
-        <!-- footer com heigh: 130px -->
+        <hr>
+        <section class="banner-full">
+            <h2>Você tem fome do quê?</h2>
+            <figure>
+                <img src="assets/images/index/food-lover-banner.webp" alt="Banner Food Lover" />
+            </figure>
+            <div class="content">
+                <p >Descubra como é ser um FoodLover e faça parte da nossa revolução!</p>
+                <a href="login.html" class="btn btn-red">Saiba mais</a>
+            </div>
+        </section>
+        <a href="login.html">
+            <picture class="ifood-benefits-banner">
+                <source srcset="assets/images/index/ifood-benefits-desktop.webp" media="(min-width: 960px)" />
+                <img src="assets/images/index/ifood-benefits-mobile.webp" alt="Imagem de homem usando o iFood Benefícios no celular" />
+            </picture>
+        </a>
     </main>
 
-    <footer>
-        <div class="footer-mobile">
-            <a href="index.html#home"><img src="assets/images/house-icon-black.png" alt="botão início">Início</a>
-            <a href="index.html#home"><img src="assets/images/search-black.png" alt="botão início">Buscar</a>
-            <a href="index.html#home"><img src="assets/images/request.png" alt="botão início">Pedidos</a>
-            <a href="index.html#home"><img src="assets/images/profile.png" alt="botão início">Perfil</a>
-        </div>
 
-        <div class="footer-desktop">
+    <footer>
+        <div class="footer-desktop footer-guest">
             <hr />
             <section class="cities">
                 <div class="title">
@@ -653,24 +506,71 @@
                     <ul>
                         <li class="footer-list-item">
                             <a href="https://www.facebook.com/iFood/" target="blanck">
-                                <img src="assets/images/face-icon 1.svg" alt="facebook">
+                                <svg width="57" height="119" viewBox="0 0 57 119" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_3_2)">
+                                        <path
+                                            d="M15.1791 119L15.7711 61.5721H3.33831C1.56219 61.5721 0.378113 60.3881 0.378113 58.6119V43.8109C0.378113 42.0348 1.56219 40.8507 3.33831 40.8507H15.1791V26.0498C15.1791 9.47264 25.8358 0 40.6368 0H53.0697C54.8458 0 56.0299 1.18408 56.0299 2.9602V15.393C56.0299 17.1692 54.8458 18.3532 53.0697 18.3532H45.9652C37.6766 18.3532 35.9005 22.4975 35.9005 28.4179V40.8507H53.6617C55.4378 40.8507 56.6219 42.0348 56.6219 43.8109L54.8458 59.204C54.8458 60.3881 53.6617 61.5721 51.8856 61.5721H35.9005V119H15.1791V119Z"
+                                            fill="#717171" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_3_2">
+                                            <rect width="57" height="119" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
                             </a>
                         </li>
                         <li class="footer-list-item">
                             <a href="https://twitter.com/ifood" target="blanck">
-                                <img src="assets/images/twitter-icon 1.svg" alt="twitter">
+                                <svg width="120" height="98" viewBox="0 0 120 98" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_3_6)">
+                                        <path
+                                            d="M0 86.7369C11.3684 94 24.3158 97.7895 37.8947 97.7895C76.4211 97.7895 107.684 66.5263 107.684 27.6842C107.684 26.7369 107.684 25.4737 107.684 24.5263C112.421 21.0526 116.842 16.6316 120 11.8948C115.579 13.7895 110.842 15.0526 105.789 15.6842C111.158 12.5263 114.947 7.78949 116.842 2.10528C111.789 4.94738 106.421 6.84212 101.053 8.10528C96.3158 3.05265 90 0.210541 83.0526 0.210541C69.4737 0.210541 58.4211 11.2632 58.4211 24.8421C58.4211 26.7369 58.7368 28.6316 59.0526 30.5263C39.1579 29.579 20.8421 20.1053 8.21053 4.63159C6.31579 8.42107 5.05263 12.8421 5.05263 17.2632C5.05263 25.4737 9.15789 33.0526 16.1053 37.4737C12 37.4737 8.21053 36.5263 4.73684 34.6316V34.9474C4.73684 46.6316 12.9474 56.7369 24.6316 58.9474C22.4211 59.579 20.2105 59.8948 18 59.8948C16.4211 59.8948 14.8421 59.579 13.5789 59.2632C16.7368 69.3684 25.8947 76.3158 36.3158 76.6316C27.7895 83.2632 17.0526 87.0526 6 87.0526C5.68421 87.0526 5.68421 87.0526 5.68421 87.0526C3.78947 87.0526 1.89474 87.0526 0 86.7369H0Z"
+                                            fill="#717171" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_3_6">
+                                            <rect width="120" height="98" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
 
                             </a>
                         </li>
                         <li class="footer-list-item">
                             <a href="https://www.youtube.com/user/ifooddelivery" target="blanck">
-                                <img src="assets/images/youtube-icon 1.svg" alt="youtube">
+                                <svg width="122" height="85" viewBox="0 0 122 85" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_3_9)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M47.4694 18.3878V66.6122L85.2857 42.3265L47.4694 18.3878ZM61 85C60.6531 85 23.1837 85 13.4694 82.5714C8.2653 81.1837 4.10203 77.0204 2.71428 71.8163C1.32652 62.449 0.285706 53.0816 0.285706 43.3673C0.285706 43.0204 0.285706 42.6735 0.285706 42.6735C0.285706 42.3265 0.285706 41.9796 0.285706 41.6327C0.285706 32.2653 0.979583 22.551 2.71428 13.1837C4.10203 7.97959 8.2653 3.81633 13.4694 2.42857C22.8367 0 60.6531 0 61 0C61.3469 0 99.1633 0 108.531 2.42857C113.735 3.81633 117.551 7.97959 118.939 13.1837C120.673 22.551 121.714 31.5714 121.714 40.9388C121.714 41.6327 121.714 41.9796 121.714 42.6735C121.714 43.0204 121.714 43.3673 121.714 43.7143C121.714 53.0816 120.673 62.449 119.286 71.8163C117.898 77.0204 113.735 81.1837 108.531 82.5714C99.1633 85 61.3469 85 61 85V85Z"
+                                            fill="#717171" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_3_9">
+                                            <rect width="122" height="85" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
 
                             </a>
                         </li>
                         <li class="footer-list-item">
                             <a href="https://www.instagram.com/ifoodbrasil/" target="blanck">
-                                <img src="assets/images/instagram-icon 1.svg" alt="instagram">
+                                <svg width="122" height="122" viewBox="0 0 122 122" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="122" height="122" fill="url(#pattern0)" />
+                                    <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image0_3_5" transform="scale(0.00819672)" />
+                                        </pattern>
+                                        <image id="image0_3_5" width="122" height="122"
+                                            xlink:href="data:image/png;base64,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" />
+                                    </defs>
+                                </svg>
 
                             </a>
                         </li>
