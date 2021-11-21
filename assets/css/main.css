@@ -1612,6 +1612,9 @@ body.body-product .hidden-mobile {
 .home-guest #home-guest {
   margin-top: 80px;
 }
+.home-guest #home-guest + footer {
+  position: relative;
+}
 .home-guest #home-guest + footer .footer-guest {
   display: block;
 }
