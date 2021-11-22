@@ -78,7 +78,7 @@ a {
 
 #login section {
   padding: 20px;
-  max-width: 100%;
+  width: 100%;
 }
 #login section h1 {
   font-weight: 600;
@@ -226,7 +226,13 @@ a {
     padding: 13px;
   }
 }
-@media (min-width: 1700px) {
+@media (min-width: 1200px) {
+  #login main {
+    background-position: -70% 60%;
+    background-size: 80%;
+  }
+}
+@media (min-width: 1450px) {
   #login main {
     background-position: -70% 80%;
     background-size: 80%;

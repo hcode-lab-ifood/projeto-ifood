@@ -2,7 +2,7 @@
 	
 	section{
 		padding: 20px;
-		max-width: 100%;
+		width: 100%;
 		h1 {
 			font-weight: 600;
 			color: var(--gray-41);
@@ -166,11 +166,15 @@
 		}
 	}
 
-	
-	
-	
-	@media (min-width: 1700px){
-		main{
+	@media (min-width: 1200px) {
+		main {
+			background-position: -70% 60%;
+			background-size: 80%;
+		}
+	}
+
+	@media (min-width: 1450px) {
+		main {
 			background-position: -70% 80%;
 			background-size: 80%;
 			justify-content: space-evenly;
