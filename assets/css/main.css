@@ -171,7 +171,7 @@ a {
   font-size: 13px;
   font-weight: 600;
 }
-@media (min-width: 996px) {
+@media (min-width: 960px) {
   #login .logo {
     display: block;
     padding-left: 50px;
@@ -183,7 +183,7 @@ a {
   #login main {
     flex-direction: row;
     align-items: center;
-    background-position: 300% center;
+    background-position: -800px center;
     min-height: 100vh;
     justify-content: space-around;
   }
