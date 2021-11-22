@@ -1,15 +1,12 @@
 #login {
-	*{
-		align-items: center;
-		justify-content: center;
-		
-	}
 	
 	section{
 		padding: 20px;
 		max-width: 100%;
 		h1 {
 			font-weight: 600;
+			color: var(--gray-41);
+			margin-top: 1.5em;
 		}
 	}
 	
@@ -18,28 +15,28 @@
 		flex-direction: column;
 		background-image: url(../images/login/bg-login.svg);
 		background-repeat: no-repeat;
-		background-position:  center 150%;
+		background-position:  center 143%;
 		background-color: #FFF;
+		align-items: center;
 	}
 	
 	.logo {
 		display: flex;
-		margin: 0;
-		margin-bottom: -150px;
-		position: relative;
+		justify-content: center;
+		position: absolute;
 		z-index: 2;
+		width: 100%;
 		img {
-			width: 85px;
-			height: 50px;
+			width: 84px;
+			height: 45px;
 			margin-top: 52px;
 		}
 		
 	}
 	
-	svg{
-		width: 257px;
-		height: 239px;
-		margin-top: 150px;
+	.ifood-illustration {
+		width: 250px;
+		margin-top: 45px;
 	}
 	
 	header {
@@ -47,6 +44,7 @@
 		text-align: center;
 		p {
 			margin-top: 25px;
+			color: var(--gray-71);
 		}
 	}
 	
@@ -54,22 +52,31 @@
 		display: flex;
 		flex-direction: column;
 		a{
-			img{
-				margin-right: 18px;
-			}
 			height: 50px;
 			width: 100%;
 			display: flex;
 			text-align: center;
+			justify-content: center;
+			align-items: center;
 			text-decoration: none;
+			font-weight: 600;
+			font-size: 13px;
 			&.btn-facebook{
 				background-color: #4065B4;
 				border-radius: 4px;
 				color: #FFF;
 			}
 			&.btn-google{
-				background-color: #FFFFFF;
+				background-color: var(--white);
 				border-radius: 4px;
+				color: var(--gray-a6);
+				box-shadow: 0px 1px 4px rgb(0 0 0 / 5%), 0px 4px 16px rgb(0 0 0 / 6%);
+			}
+			img {
+				margin-left: var(--space);
+			}
+			span {
+				flex: 1;
 			}
 		}
 		
@@ -86,39 +93,39 @@
 		justify-content: space-between;
 		a{
 			text-decoration: none;
-			padding:18px;
-			border: #C4C4C4 1px solid;
+			padding:10px;
+			border: 1px solid var(--gray-ccc);
 			border-radius: 4px;
-			min-width: 156px;
+			max-width: calc(50% - 8px);
+			flex: 1;
 			text-align: center;
+			color: var(--gray-a6);
+			font-size: 13px;
+			font-weight: 600;
 		}
 	}
 	
 	@media (min-width: 996px){
 		.logo{
 			display: block;
-			padding-left: 37px;
+			padding-left: 50px;
 			
 			img{
 				justify-content: flex-start;
-				margin-top: 55px;
-				width: 85px;
-				height: 50px;
+				margin-top: 45px;
 			}
 		}
 		
 		main{
 			flex-direction: row;
 			align-items: center;
-			background-position: 322% center;
-			min-height: calc(100vh + 38px);
-			justify-content: space-evenly;
+			background-position: 300% center;
+			min-height: 100vh;
+			justify-content: space-around;
 		}
 
-		svg{
-			align-items: flex-start;
+		.ifood-illustration{
 			width: 498px;
-			height: 461px;
 			margin-top: unset;
 		}
 	
@@ -126,16 +133,16 @@
 			display: flex;
 			justify-content: flex-end;
 			flex-direction: column;
-			background-color: #FFF;
-			box-shadow: 0 4px 4px rgba(0,0,0,.1);
+			background-color: var(--white);
+			box-shadow: 0 0 4px rgba(0,0,0,.1);
 			border-radius: 8px;
-			padding: 65px;
-			min-height: calc(100vh - 200px);
+			padding: 36px 50px 66px;
 			width: 510px;
 			header{
 				align-items: flex-end;
 				h1 {
 					font-size: 2.5em;
+					margin-top: 0;
 				}
 				p {
 					font-size: 1.5rem;
@@ -145,15 +152,16 @@
 		}
 		.btn-login{
 			min-width: 100%;
-			.btn-google{
-				box-shadow: 0 4px 4px rgba(0,0,0,.1);
-				border-radius: 4px;
+			a {
+				font-size: 14px;
 			}
 		}
 		.access{
 			min-width: 100%;
 			a{
 				min-width: 46%;
+				font-size: 14px;
+				padding: 13px;
 			}
 		}
 	}
@@ -161,8 +169,12 @@
 	
 	@media (min-width: 1700px){
 		main{
-			background-position: -63% 104%;
+			background-position: -70% 80%;
 			background-size: 80%;
+			justify-content: space-evenly;
+			.ifood-illustration {
+				margin-right: -150px;
+			}
 		}
 	}
 	
