@@ -82,6 +82,9 @@ a {
   padding: 20px;
   max-width: 100%;
 }
+#login section h1 {
+  font-weight: 600;
+}
 #login main {
   display: flex;
   flex-direction: column;
@@ -187,9 +190,16 @@ a {
     border-radius: 8px;
     padding: 65px;
     min-height: calc(100vh - 200px);
+    width: 510px;
   }
   #login section header {
     align-items: flex-end;
+  }
+  #login section header h1 {
+    font-size: 2.5em;
+  }
+  #login section header p {
+    font-size: 1.5rem;
   }
   #login .btn-login {
     min-width: 100%;
@@ -1022,7 +1032,7 @@ main#home #store .stores .red-star {
   width: 50%;
   background-color: transparent;
   outline: none;
-  border: 1px solid #ccc;
+  border: 1px solid var(--gray-ccc);
   font-size: 15px;
   border-radius: 5px;
   padding: 10px;
@@ -1051,7 +1061,7 @@ main#home #store .stores .red-star {
   width: 50%;
   background-color: transparent;
   outline: none;
-  border: 1px solid #ccc;
+  border: 1px solid var(--gray-ccc);
   font-size: 15px;
   border-radius: 5px;
   padding: 10px;
@@ -1723,7 +1733,7 @@ body.body-product .hidden-mobile {
   width: 50%;
   background-color: transparent;
   outline: none;
-  border: 1px solid #ccc;
+  border: 1px solid var(--gray-ccc);
   font-size: 15px;
   border-radius: 5px;
   padding: 10px;
