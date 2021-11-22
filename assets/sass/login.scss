@@ -16,7 +16,7 @@
 		background-image: url(../images/login/bg-login.svg);
 		background-repeat: no-repeat;
 		background-position:  center 143%;
-		background-color: #FFF;
+		background-color: var(--white);
 		align-items: center;
 	}
 	
@@ -64,7 +64,7 @@
 			&.btn-facebook{
 				background-color: #4065B4;
 				border-radius: 4px;
-				color: #FFF;
+				color: var(--white);
 			}
 			&.btn-google{
 				background-color: var(--white);

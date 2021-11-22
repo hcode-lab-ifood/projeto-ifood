@@ -62,9 +62,13 @@
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
+                        padding: 0;
                         .more-cities {
                             color: var(--red);
                         }
+                    }
+                    ul {
+                        padding: 0;
                     }
                 }
                 .about {

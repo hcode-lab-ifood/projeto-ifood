@@ -41,6 +41,7 @@
   --gray-87: #878787;
   --gray-99: #999;
   --green:#499869;
+  --green-50: #50A773;
   --orange:#cf8c1d;
   --gold: #E7A74E;
   --space: 20px;
@@ -91,7 +92,7 @@ a {
   background-image: url(../images/login/bg-login.svg);
   background-repeat: no-repeat;
   background-position: center 143%;
-  background-color: #FFF;
+  background-color: var(--white);
   align-items: center;
 }
 #login .logo {
@@ -136,7 +137,7 @@ a {
 #login .btn-login a.btn-facebook {
   background-color: #4065B4;
   border-radius: 4px;
-  color: #FFF;
+  color: var(--white);
 }
 #login .btn-login a.btn-google {
   background-color: var(--white);
@@ -501,7 +502,7 @@ footer .footer-desktop {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0;
+    padding: 0 30px;
     height: 40px;
     margin-bottom: 20px;
   }
@@ -517,7 +518,7 @@ footer .footer-desktop {
     margin-right: 0px;
   }
   footer .footer-desktop .footer-list-cities {
-    padding: 0;
+    padding: 0 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -1010,7 +1011,7 @@ main#home #store .stores .red-star {
 }
 #container #header-store #header-details-order p {
   margin-left: 10px;
-  color: #848688;
+  color: var(--gray-87);
   margin-bottom: 20px;
 }
 #container #header-store #header-details-order p #icon-money {
@@ -1093,7 +1094,7 @@ main#home #store .stores .red-star {
   width: 70%;
 }
 #container #menu #btn-menu #today #hour {
-  color: #848688;
+  color: var(--gray-87);
   margin-top: 5px;
   text-align: left;
 }
@@ -1347,7 +1348,7 @@ body.body-product #product .product-description .description {
   align-items: flex-end;
 }
 body.body-product #product .product-description .description .price {
-  color: #50A773;
+  color: var(--green-50);
   font-size: 19px;
   font-weight: 600;
   display: flex;
@@ -1373,13 +1374,13 @@ body.body-product #product .product-description .discount .label {
   width: 40px;
   height: 20px;
   background: #50A773;
-  color: #fff;
+  color: var(--white);
   font-size: 12px;
   margin-right: 13px;
 }
 body.body-product #product .product-description .discount .strike {
   font-size: 14px;
-  color: #A6A6B9;
+  color: var(gray-a6);
   text-decoration: line-through;
 }
 body.body-product #product .product-description > hr {
@@ -1393,7 +1394,7 @@ body.body-product #product .product-description .btn-red {
   width: 100%;
   height: 50px;
   background: red;
-  color: #fff;
+  color: var(--white);
   border-radius: 5px;
   margin-bottom: 30px;
 }
@@ -1410,17 +1411,17 @@ body.body-product #product .product-description .same-hall .product-same-hall {
 body.body-product #product .product-description .same-hall .product-same-hall li {
   width: 99px;
   height: 233px;
-  background: #fff;
+  background: var(--white);
 }
 body.body-product #product .product-description .same-hall .product-same-hall li > a {
   width: 99px;
 }
 body.body-product #product .product-description .same-hall .product-same-hall li > a img {
-  background: #f2f2f2;
+  background: var(--gray-f2);
   border-radius: 5px;
 }
 body.body-product #product .product-description .same-hall .product-same-hall li > a h3 {
-  color: #50A773;
+  color: var(--green-50);
   font-size: 14px;
 }
 body.body-product #product .product-description .same-hall .product-same-hall li > a p {
@@ -1698,9 +1699,13 @@ body.body-product .hidden-mobile {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0;
 }
 .home-guest #home-guest + footer .footer-guest .cities .title .more-cities {
   color: var(--red);
+}
+.home-guest #home-guest + footer .footer-guest .cities ul {
+  padding: 0;
 }
 .home-guest #home-guest + footer .footer-guest .about {
   padding: 15px;
