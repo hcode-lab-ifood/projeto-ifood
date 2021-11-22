@@ -1862,6 +1862,7 @@ body.body-product .hidden-mobile {
 .home-guest .carousel-best-restaurants ul {
   list-style: none;
   display: flex;
+  overflow-x: auto;
 }
 .home-guest .carousel-best-restaurants ul li a {
   width: 204px;
@@ -1901,6 +1902,7 @@ body.body-product .hidden-mobile {
   padding-left: 10px;
   margin-top: var(--space);
   margin-bottom: var(--space);
+  overflow-x: auto;
 }
 .home-guest .banners div {
   margin-left: calc(var(--space) / 2);
