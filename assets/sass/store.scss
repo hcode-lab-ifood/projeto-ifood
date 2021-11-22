@@ -75,7 +75,6 @@
                 font-weight: bold;
                 margin-right: 10px;
                 margin-top: 5px;
-                font-family: 'Poppins-Regular';
             }
 
             p {
@@ -299,13 +298,13 @@
     
 }
 
-@media(max-width:375px) {
+@media(max-width:960px) {
     #banner {
         max-height: 100px;
         background-position: center;
     }
     #container {
-        max-width: 375px;
+        max-width: 100%;
         margin: 0 15px;
 
         #header-store {
