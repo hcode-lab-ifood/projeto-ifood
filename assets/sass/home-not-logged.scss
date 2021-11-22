@@ -2,6 +2,53 @@
 .home-guest {
     background-color: var(--white);
     overflow-x: hidden;
+    .menu-bobile {
+        transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        background-color: var(--white);
+        padding: var(--space);
+        .wrap-header-menu {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: var(--space);
+            button {
+                border: none;
+                background-color: transparent;
+            }
+        }
+        nav {
+            ul {
+                li {
+                    margin-bottom: var(--space);
+                    font-weight: 600;
+                    color: var(--dark);
+                }
+            }
+        }
+        .wrap-footer-menu {
+            margin-top: var(--space);
+            display: flex;
+            flex-direction: column-reverse;
+            .btn {
+                margin-left: 0;
+                flex: 1;
+                width: 100%;
+                margin-bottom: var(--space);
+                min-height: 50px;
+                font-weight: 600;
+                &.btn-create-account {
+                    background-color: transparent;
+                    color: var(--red);
+                }
+            }
+        }
+    }
     #home-guest {
         margin-top: 80px;
         + footer {
@@ -92,12 +139,17 @@
             }
         }
     }
+    &.menu-opened {
+        .menu-bobile {
+            right: 0;
+        }
+    }
     #header-guest {
         background-color: var(--gray-f7);
         position: fixed;
         width: 100%;
         top: 0;
-        z-index: 5;
+        z-index: 15;
         .wrap {
             display: flex;
             justify-content: space-between;
@@ -180,10 +232,24 @@
         justify-content: center;
         padding: 15px;
         margin-top: -105px;
+        position: relative;
         &:hover {
             > .featured:not(:hover) {
                 opacity: .85;
             }
+        }
+        .hover-restaurant, .hover-market {
+            position: absolute;
+            top: 200px;
+            transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+            opacity: 0;
+            pointer-events: none;
+            img {
+                max-width: 340px;
+            }
+        }
+        .hover-restaurant {
+            margin-left: 400px;
         }
         .featured {
             border-radius: var(--space);
@@ -196,11 +262,23 @@
                 .btn {
                     background-color: #cc1825;
                 }
+                &:hover {
+                    ~ .hover-restaurant {
+                        top: 0;
+                        opacity: 1;
+                    }
+                }
             }
             &.featured-market {
                 background-color: #b6d048;
                 .btn {
                     background-color: #9eb53e;
+                }
+                &:hover {
+                    ~ .hover-market {
+                        top: 0;
+                        opacity: 1;
+                    }
                 }
             }
             figure {

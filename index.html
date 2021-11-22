@@ -30,7 +30,7 @@
 
     <header id="header-guest">
         <div class="wrap">
-            <div class="mobile-menu">
+            <div class="mobile-menu" id="open-menu">
                 <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="22" height="2" rx="1" fill="#717171"></rect>
                     <rect y="8" width="22" height="2" rx="1" fill="#717171"></rect>
@@ -60,6 +60,38 @@
             </nav>
             <a href="login.html" class="btn btn-create-account">criar conta</a>
             <a href="login.html" class="btn btn-signin">Entrar</a>
+        </div>
+        <div class="menu-bobile">
+            <div class="wrap-header-menu">
+                <div class="ifood-logo">
+                    <a href="index.html">
+                        <img src="assets/images/index/ifood-logo.svg" alt="Logotipo Ifood" width="80" />
+                    </a>
+                </div>
+                <button type="button" id="close-menu">
+                    <img src="assets/images/close-red.svg" width="30" height="30" alt="Ícone fechar" />
+                </button>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Entregador</a>
+                    </li>
+                    <li>
+                        <a href="#">Restaurante e Mercado</a>
+                    </li>
+                    <li>
+                        <a href="#">Carreiras</a>
+                    </li>
+                    <li>
+                        <a href="#">iFood Card</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="wrap-footer-menu">
+                <a href="login.html" class="btn btn-create-account">criar conta</a>
+                <a href="login.html" class="btn btn-signin">Entrar</a>
+            </div>
         </div>
     </header>
 
@@ -97,6 +129,12 @@
                         <img src="assets/images/index/arrow-right.svg" alt="seta" height="12px" />
                     </div>
                 </a>
+                <div class="hover-restaurant">
+                    <img src="assets/images/index/restaurant-items.png" alt="Itens de restaurante" />
+                </div>
+                <div class="hover-market">
+                    <img src="assets/images/index/market-items.png" alt="Itens de mercado" />
+                </div>
             </div>
             <ul class="categories-small">
                 <li>
@@ -630,6 +668,24 @@
         </div>
 
     </footer>
+
+    <script>
+        const menu = document.querySelector("#open-menu");
+        const close = document.querySelector("#close-menu");
+        const body = document.querySelector("body");
+
+        menu.addEventListener("click", () => {
+
+            body.classList.add("menu-opened");
+
+        });
+
+        close.addEventListener("click", () => {
+
+        body.classList.remove("menu-opened");
+
+        });
+    </script>
 
 </body>
 
