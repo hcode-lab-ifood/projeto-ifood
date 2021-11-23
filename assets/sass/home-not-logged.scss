@@ -232,6 +232,7 @@
     }
     .categories-big {
         display: flex;
+        overflow-x: hidden;
         align-items: center;
         justify-content: center;
         padding: 15px;
@@ -243,6 +244,7 @@
             }
         }
         .hover-restaurant, .hover-market {
+            display: none;
             position: absolute;
             top: 200px;
             transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -546,6 +548,9 @@
                     position: absolute;
                     bottom: 30px;
                 }
+            }
+            .hover-restaurant, .hover-market {
+                display: block;
             }
         }
         .categories-small {

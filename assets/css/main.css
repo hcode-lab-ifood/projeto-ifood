@@ -1866,6 +1866,7 @@ body.body-product .hidden-mobile {
 }
 .home-guest .categories-big {
   display: flex;
+  overflow-x: hidden;
   align-items: center;
   justify-content: center;
   padding: 15px;
@@ -1876,6 +1877,7 @@ body.body-product .hidden-mobile {
   opacity: 0.85;
 }
 .home-guest .categories-big .hover-restaurant, .home-guest .categories-big .hover-market {
+  display: none;
   position: absolute;
   top: 200px;
   transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -2165,6 +2167,9 @@ body.body-product .hidden-mobile {
     margin-left: 0;
     position: absolute;
     bottom: 30px;
+  }
+  .home-guest .categories-big .hover-restaurant, .home-guest .categories-big .hover-market {
+    display: block;
   }
   .home-guest .categories-small {
     justify-content: center;
